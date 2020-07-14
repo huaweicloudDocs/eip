@@ -29,7 +29,7 @@
 </tr>
 <tr id="row736325817457"><td class="cellrowborder" valign="top" width="20.810000000000002%" headers="mcps1.2.3.1.1 "><p id="p1447695213912"><a name="p1447695213912"></a><a name="p1447695213912"></a><a href="https://support.huaweicloud.com/api-eip/eip_apisharedbandwidth_0000.html" target="_blank" rel="noopener noreferrer">带宽（V2.0）</a></p>
 </td>
-<td class="cellrowborder" valign="top" width="79.19%" headers="mcps1.2.3.1.2 "><a name="ul144761529910"></a><a name="ul144761529910"></a><ul id="ul144761529910"><li>共享带宽的创建、删除等接口。</li><li>共享带宽插入/移出弹性公网IP操作。</li></ul>
+<td class="cellrowborder" valign="top" width="79.19%" headers="mcps1.2.3.1.2 "><a name="ul15648203810547"></a><a name="ul15648203810547"></a><ul id="ul15648203810547"><li>共享带宽的创建、删除等接口。</li><li>共享带宽插入/移出弹性公网IP操作。</li></ul>
 </td>
 </tr>
 <tr id="row53631958124513"><td class="cellrowborder" valign="top" width="20.810000000000002%" headers="mcps1.2.3.1.1 "><p id="p17476115218917"><a name="p17476115218917"></a><a name="p17476115218917"></a><a href="https://support.huaweicloud.com/api-eip/eip_apiquota_0000.html" target="_blank" rel="noopener noreferrer">配额</a></p>
