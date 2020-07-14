@@ -116,12 +116,12 @@ POST /v2.0/\{project\_id\}/bandwidths/\{bandwidth\_id\}/insert
     </tr>
     <tr id="zh-cn_topic_0201534131_row144151444141"><td class="cellrowborder" valign="top" width="14.29%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534131_p490210492147"><a name="zh-cn_topic_0201534131_p490210492147"></a><a name="zh-cn_topic_0201534131_p490210492147"></a>publicip_type</p>
     </td>
-    <td class="cellrowborder" valign="top" width="17.03%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534131_p4902154913141"><a name="zh-cn_topic_0201534131_p4902154913141"></a><a name="zh-cn_topic_0201534131_p4902154913141"></a>是</p>
+    <td class="cellrowborder" valign="top" width="17.03%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534131_p4902154913141"><a name="zh-cn_topic_0201534131_p4902154913141"></a><a name="zh-cn_topic_0201534131_p4902154913141"></a>否</p>
     </td>
     <td class="cellrowborder" valign="top" width="18.96%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534131_p9902149171411"><a name="zh-cn_topic_0201534131_p9902149171411"></a><a name="zh-cn_topic_0201534131_p9902149171411"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="49.72%" headers="mcps1.2.5.1.4 "><a name="zh-cn_topic_0201534131_ul14903154919144"></a><a name="zh-cn_topic_0201534131_ul14903154919144"></a><ul id="zh-cn_topic_0201534131_ul14903154919144"><li>功能说明：弹性公网IP的类型</li><li>取值范围：<em id="zh-cn_topic_0201534131_i16850184017499"><a name="zh-cn_topic_0201534131_i16850184017499"></a><a name="zh-cn_topic_0201534131_i16850184017499"></a>5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP）</em><a name="zh-cn_topic_0201534131_ul585004064911"></a><a name="zh-cn_topic_0201534131_ul585004064911"></a><ul id="zh-cn_topic_0201534131_ul585004064911"><li>东北-大连：5_telcom、5_union</li><li>华南-广州：5_bgp、5_sbgp</li><li>华东-上海一：5_bgp、5_sbgp</li><li>华东-上海二：5_bgp、5_sbgp</li><li>华北-北京一：5_bgp、5_sbgp</li><li>亚太-香港：5_bgp</li><li>亚太-曼谷：5_bgp</li><li>亚太-新加坡：5_bgp</li><li>非洲-约翰内斯堡：5_bgp</li><li>西南-贵阳一：5_sbgp</li><li>华北-北京四：5_bgp、5_sbgp</li><li>拉美-圣地亚哥：5_bgp</li><li>拉美-圣保罗一：5_bgp</li><li>拉美-墨西哥城一：5_bgp</li><li>拉美-布宜诺斯艾利一：5_bgp</li><li>拉美-利马一：5_bgp</li><li>拉美-圣地亚哥二：5_bgp</li></ul>
-    </li><li>约束：<a name="zh-cn_topic_0201534131_ul9738153015499"></a><a name="zh-cn_topic_0201534131_ul9738153015499"></a><ul id="zh-cn_topic_0201534131_ul9738153015499"><li>必须是系统具体支持的类型</li><li>publicip_id为IPv4端口，所以"publicip_type"字段未给定时，默认为5_bgp。</li></ul>
+    <td class="cellrowborder" valign="top" width="49.72%" headers="mcps1.2.5.1.4 "><a name="zh-cn_topic_0201534131_ul14903154919144"></a><a name="zh-cn_topic_0201534131_ul14903154919144"></a><ul id="zh-cn_topic_0201534131_ul14903154919144"><li>功能说明：弹性公网IP的类型</li><li>取值范围：<em id="zh-cn_topic_0201534131_i16850184017499"><a name="zh-cn_topic_0201534131_i16850184017499"></a><a name="zh-cn_topic_0201534131_i16850184017499"></a>5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP）</em><a name="zh-cn_topic_0201534131_ul585004064911"></a><a name="zh-cn_topic_0201534131_ul585004064911"></a><ul id="zh-cn_topic_0201534131_ul585004064911"><li>东北-大连：5_telcom、5_union</li><li>华南-广州：5_bgp、5_sbgp</li><li>华东-上海一：5_bgp、5_sbgp</li><li>华东-上海二：5_bgp、5_sbgp</li><li>华北-北京一：5_bgp、5_sbgp</li><li>亚太-香港：5_bgp</li><li>亚太-曼谷：5_bgp</li><li>亚太-新加坡：5_bgp</li><li>非洲-约翰内斯堡：5_bgp</li><li>西南-贵阳一：5_sbgp</li><li>华北-北京四：5_bgp、5_sbgp、5_dualStack</li><li>拉美-圣地亚哥：5_bgp</li><li>拉美-圣保罗一：5_bgp</li><li>拉美-墨西哥城一：5_bgp</li><li>拉美-布宜诺斯艾利一：5_bgp</li><li>拉美-利马一：5_bgp</li><li>拉美-圣地亚哥二：5_bgp</li></ul>
+    </li><li>约束：<a name="zh-cn_topic_0201534131_ul9738153015499"></a><a name="zh-cn_topic_0201534131_ul9738153015499"></a><ul id="zh-cn_topic_0201534131_ul9738153015499"><li>必须是系统具体支持的类型</li><li>publicip_id为IPv4端口，所以"publicip_type"字段未给定时，默认为5_bgp。</li><li>若publicip_id为弹性公网IP的id，则该字段可自动忽略。若publicip_id为IPv6端口PORT的id，则该字段必填，为5_dualStack（本条约束适用于“华北-北京四”）</li></ul>
     </li></ul>
     </td>
     </tr>
@@ -238,7 +238,7 @@ POST /v2.0/\{project\_id\}/bandwidths/\{bandwidth\_id\}/insert
     </td>
     <td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534131_p418192514212"><a name="zh-cn_topic_0201534131_p418192514212"></a><a name="zh-cn_topic_0201534131_p418192514212"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="51%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534131_ul101811251216"></a><a name="zh-cn_topic_0201534131_ul101811251216"></a><ul id="zh-cn_topic_0201534131_ul101811251216"><li>功能说明：按流量计费，按带宽计费还是按增强型95计费。</li><li>取值范围：bandwidth（按带宽计费），traffic（按流量计费），95peak_plus（按增强型95计费），不返回或者为空时表示是bandwidth</li><li>约束：只有共享带宽支持95peak_plus（按增强型95计费），按增强型95计费时需要指定保底百分比，默认是20%。</li></ul>
+    <td class="cellrowborder" valign="top" width="51%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534131_ul101811251216"></a><a name="zh-cn_topic_0201534131_ul101811251216"></a><ul id="zh-cn_topic_0201534131_ul101811251216"><li>功能说明：按流量计费，按带宽计费还是按增强型95计费</li><li>取值范围：bandwidth（按带宽计费），traffic（按流量计费），95peak_plus（按增强型95计费），不返回或者为空时表示是bandwidth</li><li>约束：只有共享带宽支持95peak_plus（按增强型95计费），按增强型95计费时需要指定保底百分比，默认是20%</li></ul>
     </td>
     </tr>
     <tr id="zh-cn_topic_0201534131_row590556151112"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534131_p99015567111"><a name="zh-cn_topic_0201534131_p99015567111"></a><a name="zh-cn_topic_0201534131_p99015567111"></a>billing_info</p>
@@ -359,5 +359,5 @@ POST /v2.0/\{project\_id\}/bandwidths/\{bandwidth\_id\}/insert
 
 ## 错误码<a name="zh-cn_topic_0201534131_section85821649202813"></a>
 
-请参考[错误码](错误码.md#eip_api05_0002)。
+请参考[错误码](错误码.md)。
 

@@ -8,12 +8,6 @@
 
 GET /v1/\{project\_id\}/publicips
 
-样例：
-
-```
-GET https://{Endpoint}/v1/{project_id}/publicips?limit={limit}&marker={marker}
-```
-
 参数说明请参见[表1](#zh-cn_topic_0201534309_table51200735)。
 
 **表 1**  参数说明
@@ -88,7 +82,9 @@ GET https://{Endpoint}/v1/{project_id}/publicips?limit={limit}&marker={marker}
 
 -   请求样例
 
-    无
+    ```
+    GET https://{Endpoint}/v1/{project_id}/publicips?limit={limit}&marker={marker}
+    ```
 
 
 ## 响应消息<a name="zh-cn_topic_0201534309_section39547486"></a>
@@ -343,5 +339,5 @@ GET https://{Endpoint}/v1/{project_id}/publicips?limit={limit}&marker={marker}
 
 ## 错误码<a name="zh-cn_topic_0201534309_section85821649202813"></a>
 
-请参考[错误码](错误码.md#eip_api05_0002)。
+请参考[错误码](错误码.md)。
 

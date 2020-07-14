@@ -46,7 +46,9 @@ GET /v1/\{project\_id\}/publicips/\{publicip\_id\}
 
 -   请求样例
 
-    无
+    ```
+    Get https://{Endpoint}/v1/{project_id}/publicips/{publicip_id}
+    ```
 
 
 ## 响应消息<a name="zh-cn_topic_0201534285_section64271818"></a>
@@ -285,5 +287,5 @@ GET /v1/\{project\_id\}/publicips/\{publicip\_id\}
 
 ## 错误码<a name="zh-cn_topic_0201534285_section85821649202813"></a>
 
-请参考[错误码](错误码.md#eip_api05_0002)。
+请参考[错误码](错误码.md)。
 

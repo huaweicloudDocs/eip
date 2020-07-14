@@ -61,5 +61,5 @@ DELETE https://{Endpoint}/v2.0/floatingips/a95ec431-8473-463b-aede-34fb048ee3a7
 
 ## 错误码<a name="zh-cn_topic_0201534157_section85821649202813"></a>
 
-请参见[错误码](错误码.md#eip_api05_0002)。
+请参见[错误码](错误码.md)。
 

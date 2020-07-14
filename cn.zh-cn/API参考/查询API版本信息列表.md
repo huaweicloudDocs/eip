@@ -134,5 +134,5 @@ GET https://{Endpoint}/
 
 ## 错误码<a name="zh-cn_topic_0201534229_section85821649202813"></a>
 
-请参见[错误码](错误码.md#eip_api05_0002)。
+请参见[错误码](错误码.md)。
 

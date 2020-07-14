@@ -195,6 +195,7 @@ PUT /v2.0/floatingips/\{floatingip\_id\}
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534103_p122232018115215"><a name="zh-cn_topic_0201534103_p122232018115215"></a><a name="zh-cn_topic_0201534103_p122232018115215"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534103_p18223161825216"><a name="zh-cn_topic_0201534103_p18223161825216"></a><a name="zh-cn_topic_0201534103_p18223161825216"></a>DNS名称</p>
+<p id="zh-cn_topic_0201534103_p10244175881716"><a name="zh-cn_topic_0201534103_p10244175881716"></a><a name="zh-cn_topic_0201534103_p10244175881716"></a>该参数当前仅在“华南-广州”开放</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0201534103_row17174241670"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534103_p492133065713"><a name="zh-cn_topic_0201534103_p492133065713"></a><a name="zh-cn_topic_0201534103_p492133065713"></a>dns_domain</p>
@@ -202,22 +203,7 @@ PUT /v2.0/floatingips/\{floatingip\_id\}
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534103_p16929300573"><a name="zh-cn_topic_0201534103_p16929300573"></a><a name="zh-cn_topic_0201534103_p16929300573"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534103_p3921230175711"><a name="zh-cn_topic_0201534103_p3921230175711"></a><a name="zh-cn_topic_0201534103_p3921230175711"></a>DNS域地址</p>
-</td>
-</tr>
-<tr id="zh-cn_topic_0201534103_row1418142410714"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534103_p1953114119914"><a name="zh-cn_topic_0201534103_p1953114119914"></a><a name="zh-cn_topic_0201534103_p1953114119914"></a>created_at</p>
-</td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534103_p595318416919"><a name="zh-cn_topic_0201534103_p595318416919"></a><a name="zh-cn_topic_0201534103_p595318416919"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534103_p1395374115919"><a name="zh-cn_topic_0201534103_p1395374115919"></a><a name="zh-cn_topic_0201534103_p1395374115919"></a>资源创建时间采用UTC时间</p>
-<p id="zh-cn_topic_0201534103_p2070141994713"><a name="zh-cn_topic_0201534103_p2070141994713"></a><a name="zh-cn_topic_0201534103_p2070141994713"></a>格式：YYYY-MM-DDTHH:MM:SS</p>
-</td>
-</tr>
-<tr id="zh-cn_topic_0201534103_row1188246714"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534103_p139719548912"><a name="zh-cn_topic_0201534103_p139719548912"></a><a name="zh-cn_topic_0201534103_p139719548912"></a>updated_at</p>
-</td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534103_p53971154594"><a name="zh-cn_topic_0201534103_p53971154594"></a><a name="zh-cn_topic_0201534103_p53971154594"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534103_p1339713549918"><a name="zh-cn_topic_0201534103_p1339713549918"></a><a name="zh-cn_topic_0201534103_p1339713549918"></a>资源更新时间采用UTC时间</p>
-<p id="zh-cn_topic_0201534103_p137222218476"><a name="zh-cn_topic_0201534103_p137222218476"></a><a name="zh-cn_topic_0201534103_p137222218476"></a>格式：YYYY-MM-DDTHH:MM:SS</p>
+<p id="zh-cn_topic_0201534103_p1630960191812"><a name="zh-cn_topic_0201534103_p1630960191812"></a><a name="zh-cn_topic_0201534103_p1630960191812"></a>该参数当前仅在“华南-广州”开放</p>
 </td>
 </tr>
 </tbody>
@@ -295,5 +281,5 @@ PUT https://{Endpoint}/v2.0/floatingips/b997e0d4-3359-4c74-8f88-bc0af81cd5a2
 
 ## 错误码<a name="zh-cn_topic_0201534103_section85821649202813"></a>
 
-请参见[错误码](错误码.md#eip_api05_0002)。
+请参见[错误码](错误码.md)。
 

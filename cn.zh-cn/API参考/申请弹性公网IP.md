@@ -389,5 +389,5 @@ POST /v1/\{project\_id\}/publicips
 
 ## 错误码<a name="zh-cn_topic_0201534274_section85821649202813"></a>
 
-请参考[错误码](错误码.md#eip_api05_0002)。
+请参考[错误码](错误码.md)。
 

@@ -70,6 +70,15 @@ DELETE /v2.0/\{project\_id\}/publicips/\{publicip\_id\}/tags/\{key\}
 
     无
 
+    或
+
+    ```
+    {
+           "code":"xxx",
+           "message":"xxxxx"
+    }
+    ```
+
 
 ## 状态码<a name="zh-cn_topic_0201534220_section31981619"></a>
 
@@ -77,5 +86,5 @@ DELETE /v2.0/\{project\_id\}/publicips/\{publicip\_id\}/tags/\{key\}
 
 ## 错误码<a name="zh-cn_topic_0201534220_section85821649202813"></a>
 
-请参考[错误码](错误码.md#eip_api05_0002)。
+请参考[错误码](错误码.md)。
 

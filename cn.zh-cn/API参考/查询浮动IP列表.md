@@ -17,39 +17,39 @@ GET /v2.0/floatingips
 <a name="zh-cn_topic_0201534068_table107561756154818"></a>
 <table><thead align="left"><tr id="zh-cn_topic_0201534068_row167571556104810"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0201534068_p0685313416"><a name="zh-cn_topic_0201534068_p0685313416"></a><a name="zh-cn_topic_0201534068_p0685313416"></a>参数</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0201534068_p768561134110"><a name="zh-cn_topic_0201534068_p768561134110"></a><a name="zh-cn_topic_0201534068_p768561134110"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="15.809999999999999%" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0201534068_p768561134110"><a name="zh-cn_topic_0201534068_p768561134110"></a><a name="zh-cn_topic_0201534068_p768561134110"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0201534068_p368681134120"><a name="zh-cn_topic_0201534068_p368681134120"></a><a name="zh-cn_topic_0201534068_p368681134120"></a>类型</p>
+<th class="cellrowborder" valign="top" width="16.63%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0201534068_p368681134120"><a name="zh-cn_topic_0201534068_p368681134120"></a><a name="zh-cn_topic_0201534068_p368681134120"></a>类型</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="zh-cn_topic_0201534068_p668612124119"><a name="zh-cn_topic_0201534068_p668612124119"></a><a name="zh-cn_topic_0201534068_p668612124119"></a>说明</p>
+<th class="cellrowborder" valign="top" width="42.559999999999995%" id="mcps1.2.5.1.4"><p id="zh-cn_topic_0201534068_p668612124119"><a name="zh-cn_topic_0201534068_p668612124119"></a><a name="zh-cn_topic_0201534068_p668612124119"></a>说明</p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="zh-cn_topic_0201534068_row27572562488"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534068_p176864111411"><a name="zh-cn_topic_0201534068_p176864111411"></a><a name="zh-cn_topic_0201534068_p176864111411"></a>id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p136865110419"><a name="zh-cn_topic_0201534068_p136865110419"></a><a name="zh-cn_topic_0201534068_p136865110419"></a>否</p>
+<td class="cellrowborder" valign="top" width="15.809999999999999%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p136865110419"><a name="zh-cn_topic_0201534068_p136865110419"></a><a name="zh-cn_topic_0201534068_p136865110419"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p16861211413"><a name="zh-cn_topic_0201534068_p16861211413"></a><a name="zh-cn_topic_0201534068_p16861211413"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.63%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p16861211413"><a name="zh-cn_topic_0201534068_p16861211413"></a><a name="zh-cn_topic_0201534068_p16861211413"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p1068611114119"><a name="zh-cn_topic_0201534068_p1068611114119"></a><a name="zh-cn_topic_0201534068_p1068611114119"></a>浮动IP地址的id。</p>
+<td class="cellrowborder" valign="top" width="42.559999999999995%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p1068611114119"><a name="zh-cn_topic_0201534068_p1068611114119"></a><a name="zh-cn_topic_0201534068_p1068611114119"></a>浮动IP地址的id。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0201534068_row1757105620480"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534068_p868615164111"><a name="zh-cn_topic_0201534068_p868615164111"></a><a name="zh-cn_topic_0201534068_p868615164111"></a>floating_ip_address</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p1468611134120"><a name="zh-cn_topic_0201534068_p1468611134120"></a><a name="zh-cn_topic_0201534068_p1468611134120"></a>否</p>
+<td class="cellrowborder" valign="top" width="15.809999999999999%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p1468611134120"><a name="zh-cn_topic_0201534068_p1468611134120"></a><a name="zh-cn_topic_0201534068_p1468611134120"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p1668716114415"><a name="zh-cn_topic_0201534068_p1668716114415"></a><a name="zh-cn_topic_0201534068_p1668716114415"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.63%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p1668716114415"><a name="zh-cn_topic_0201534068_p1668716114415"></a><a name="zh-cn_topic_0201534068_p1668716114415"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p76878124112"><a name="zh-cn_topic_0201534068_p76878124112"></a><a name="zh-cn_topic_0201534068_p76878124112"></a>浮动IP地址(IPv6格式)。</p>
+<td class="cellrowborder" valign="top" width="42.559999999999995%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p76878124112"><a name="zh-cn_topic_0201534068_p76878124112"></a><a name="zh-cn_topic_0201534068_p76878124112"></a>浮动IP地址(IPv6格式)。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0201534068_row16757125613485"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534068_p1668781104117"><a name="zh-cn_topic_0201534068_p1668781104117"></a><a name="zh-cn_topic_0201534068_p1668781104117"></a>floating_network_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p1668731204116"><a name="zh-cn_topic_0201534068_p1668731204116"></a><a name="zh-cn_topic_0201534068_p1668731204116"></a>否</p>
+<td class="cellrowborder" valign="top" width="15.809999999999999%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p1668731204116"><a name="zh-cn_topic_0201534068_p1668731204116"></a><a name="zh-cn_topic_0201534068_p1668731204116"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p1687610411"><a name="zh-cn_topic_0201534068_p1687610411"></a><a name="zh-cn_topic_0201534068_p1687610411"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.63%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p1687610411"><a name="zh-cn_topic_0201534068_p1687610411"></a><a name="zh-cn_topic_0201534068_p1687610411"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p14687611411"><a name="zh-cn_topic_0201534068_p14687611411"></a><a name="zh-cn_topic_0201534068_p14687611411"></a>外部网络的id。</p>
+<td class="cellrowborder" valign="top" width="42.559999999999995%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p14687611411"><a name="zh-cn_topic_0201534068_p14687611411"></a><a name="zh-cn_topic_0201534068_p14687611411"></a>外部网络的id。</p>
 <p id="zh-cn_topic_0201534068_p4687818419"><a name="zh-cn_topic_0201534068_p4687818419"></a><a name="zh-cn_topic_0201534068_p4687818419"></a>只能使用固定的外网，外部网络的信息请通过</p>
 <p id="zh-cn_topic_0201534068_p9687151144115"><a name="zh-cn_topic_0201534068_p9687151144115"></a><a name="zh-cn_topic_0201534068_p9687151144115"></a>GET /v2.0/networks?router:external=True或</p>
 <p id="zh-cn_topic_0201534068_p1568711118416"><a name="zh-cn_topic_0201534068_p1568711118416"></a><a name="zh-cn_topic_0201534068_p1568711118416"></a>GET /v2.0/networks?name={floating_network}或neutron net-external-list方式查询。</p>
@@ -57,38 +57,65 @@ GET /v2.0/floatingips
 </tr>
 <tr id="zh-cn_topic_0201534068_row67574563489"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534068_p106871419413"><a name="zh-cn_topic_0201534068_p106871419413"></a><a name="zh-cn_topic_0201534068_p106871419413"></a>router_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p1268712115416"><a name="zh-cn_topic_0201534068_p1268712115416"></a><a name="zh-cn_topic_0201534068_p1268712115416"></a>否</p>
+<td class="cellrowborder" valign="top" width="15.809999999999999%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p1268712115416"><a name="zh-cn_topic_0201534068_p1268712115416"></a><a name="zh-cn_topic_0201534068_p1268712115416"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p6687015419"><a name="zh-cn_topic_0201534068_p6687015419"></a><a name="zh-cn_topic_0201534068_p6687015419"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.63%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p6687015419"><a name="zh-cn_topic_0201534068_p6687015419"></a><a name="zh-cn_topic_0201534068_p6687015419"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p668714111415"><a name="zh-cn_topic_0201534068_p668714111415"></a><a name="zh-cn_topic_0201534068_p668714111415"></a>所属路由器id。</p>
+<td class="cellrowborder" valign="top" width="42.559999999999995%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p668714111415"><a name="zh-cn_topic_0201534068_p668714111415"></a><a name="zh-cn_topic_0201534068_p668714111415"></a>所属路由器id。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0201534068_row17757155634812"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534068_p1868717104113"><a name="zh-cn_topic_0201534068_p1868717104113"></a><a name="zh-cn_topic_0201534068_p1868717104113"></a>port_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p26871119419"><a name="zh-cn_topic_0201534068_p26871119419"></a><a name="zh-cn_topic_0201534068_p26871119419"></a>否</p>
+<td class="cellrowborder" valign="top" width="15.809999999999999%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p26871119419"><a name="zh-cn_topic_0201534068_p26871119419"></a><a name="zh-cn_topic_0201534068_p26871119419"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p66889116414"><a name="zh-cn_topic_0201534068_p66889116414"></a><a name="zh-cn_topic_0201534068_p66889116414"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.63%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p66889116414"><a name="zh-cn_topic_0201534068_p66889116414"></a><a name="zh-cn_topic_0201534068_p66889116414"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p14688213413"><a name="zh-cn_topic_0201534068_p14688213413"></a><a name="zh-cn_topic_0201534068_p14688213413"></a>端口id。</p>
+<td class="cellrowborder" valign="top" width="42.559999999999995%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p14688213413"><a name="zh-cn_topic_0201534068_p14688213413"></a><a name="zh-cn_topic_0201534068_p14688213413"></a>端口id。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0201534068_row1375718561481"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534068_p868818134116"><a name="zh-cn_topic_0201534068_p868818134116"></a><a name="zh-cn_topic_0201534068_p868818134116"></a>fixed_ip_address</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p568817111417"><a name="zh-cn_topic_0201534068_p568817111417"></a><a name="zh-cn_topic_0201534068_p568817111417"></a>否</p>
+<td class="cellrowborder" valign="top" width="15.809999999999999%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p568817111417"><a name="zh-cn_topic_0201534068_p568817111417"></a><a name="zh-cn_topic_0201534068_p568817111417"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p96881617413"><a name="zh-cn_topic_0201534068_p96881617413"></a><a name="zh-cn_topic_0201534068_p96881617413"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.63%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p96881617413"><a name="zh-cn_topic_0201534068_p96881617413"></a><a name="zh-cn_topic_0201534068_p96881617413"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p1668816118413"><a name="zh-cn_topic_0201534068_p1668816118413"></a><a name="zh-cn_topic_0201534068_p1668816118413"></a>关联端口的私有IP地址。</p>
+<td class="cellrowborder" valign="top" width="42.559999999999995%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p1668816118413"><a name="zh-cn_topic_0201534068_p1668816118413"></a><a name="zh-cn_topic_0201534068_p1668816118413"></a>关联端口的私有IP地址。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0201534068_row11758105613489"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534068_p968813113416"><a name="zh-cn_topic_0201534068_p968813113416"></a><a name="zh-cn_topic_0201534068_p968813113416"></a>tenant_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p468815111414"><a name="zh-cn_topic_0201534068_p468815111414"></a><a name="zh-cn_topic_0201534068_p468815111414"></a>否</p>
+<td class="cellrowborder" valign="top" width="15.809999999999999%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p468815111414"><a name="zh-cn_topic_0201534068_p468815111414"></a><a name="zh-cn_topic_0201534068_p468815111414"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p12688141154119"><a name="zh-cn_topic_0201534068_p12688141154119"></a><a name="zh-cn_topic_0201534068_p12688141154119"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.63%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p12688141154119"><a name="zh-cn_topic_0201534068_p12688141154119"></a><a name="zh-cn_topic_0201534068_p12688141154119"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p10487112"><a name="zh-cn_topic_0201534068_p10487112"></a><a name="zh-cn_topic_0201534068_p10487112"></a>项目ID</p>
+<td class="cellrowborder" valign="top" width="42.559999999999995%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p10487112"><a name="zh-cn_topic_0201534068_p10487112"></a><a name="zh-cn_topic_0201534068_p10487112"></a>项目ID</p>
+</td>
+</tr>
+<tr id="zh-cn_topic_0201534068_row15163151102"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534068_p19997422102"><a name="zh-cn_topic_0201534068_p19997422102"></a><a name="zh-cn_topic_0201534068_p19997422102"></a>limit</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.809999999999999%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p11100114281018"><a name="zh-cn_topic_0201534068_p11100114281018"></a><a name="zh-cn_topic_0201534068_p11100114281018"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.63%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p1610054213103"><a name="zh-cn_topic_0201534068_p1610054213103"></a><a name="zh-cn_topic_0201534068_p1610054213103"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="42.559999999999995%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p5100134217101"><a name="zh-cn_topic_0201534068_p5100134217101"></a><a name="zh-cn_topic_0201534068_p5100134217101"></a>每页显示的条目数量。</p>
+</td>
+</tr>
+<tr id="zh-cn_topic_0201534068_row8578219101016"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534068_p17100142191012"><a name="zh-cn_topic_0201534068_p17100142191012"></a><a name="zh-cn_topic_0201534068_p17100142191012"></a>marker</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.809999999999999%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p1110011422102"><a name="zh-cn_topic_0201534068_p1110011422102"></a><a name="zh-cn_topic_0201534068_p1110011422102"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.63%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p8100442111010"><a name="zh-cn_topic_0201534068_p8100442111010"></a><a name="zh-cn_topic_0201534068_p8100442111010"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="42.559999999999995%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p18100164214106"><a name="zh-cn_topic_0201534068_p18100164214106"></a><a name="zh-cn_topic_0201534068_p18100164214106"></a>取值为上一页数据的最后一条记录的id，当marker参数为无效id时，response将响应错误码400。</p>
+</td>
+</tr>
+<tr id="zh-cn_topic_0201534068_row5971723121020"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534068_p210013424100"><a name="zh-cn_topic_0201534068_p210013424100"></a><a name="zh-cn_topic_0201534068_p210013424100"></a>page_reverse</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.809999999999999%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p11008425103"><a name="zh-cn_topic_0201534068_p11008425103"></a><a name="zh-cn_topic_0201534068_p11008425103"></a>Boolean</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.63%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p1310015428101"><a name="zh-cn_topic_0201534068_p1310015428101"></a><a name="zh-cn_topic_0201534068_p1310015428101"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="42.559999999999995%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p310016420106"><a name="zh-cn_topic_0201534068_p310016420106"></a><a name="zh-cn_topic_0201534068_p310016420106"></a>False/True，是否设置分页的顺序。</p>
 </td>
 </tr>
 </tbody>
@@ -160,6 +187,13 @@ GET https://{Endpoint}/v2.0/floatingips?id={fip_id}&router_id={router_id}&floati
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534068_p4121850371"><a name="zh-cn_topic_0201534068_p4121850371"></a><a name="zh-cn_topic_0201534068_p4121850371"></a>浮动IP地址的id。</p>
 </td>
 </tr>
+<tr id="zh-cn_topic_0201534068_row16518828181314"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534068_p1276893520133"><a name="zh-cn_topic_0201534068_p1276893520133"></a><a name="zh-cn_topic_0201534068_p1276893520133"></a>project_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534068_p147682350136"><a name="zh-cn_topic_0201534068_p147682350136"></a><a name="zh-cn_topic_0201534068_p147682350136"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534068_p876820352133"><a name="zh-cn_topic_0201534068_p876820352133"></a><a name="zh-cn_topic_0201534068_p876820352133"></a>项目ID</p>
+</td>
+</tr>
 <tr id="zh-cn_topic_0201534068_row614132416712"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534068_p1912112509713"><a name="zh-cn_topic_0201534068_p1912112509713"></a><a name="zh-cn_topic_0201534068_p1912112509713"></a>floating_ip_address</p>
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534068_p11211850072"><a name="zh-cn_topic_0201534068_p11211850072"></a><a name="zh-cn_topic_0201534068_p11211850072"></a>String</p>
@@ -208,6 +242,7 @@ GET https://{Endpoint}/v2.0/floatingips?id={fip_id}&router_id={router_id}&floati
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534068_p122232018115215"><a name="zh-cn_topic_0201534068_p122232018115215"></a><a name="zh-cn_topic_0201534068_p122232018115215"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534068_p18223161825216"><a name="zh-cn_topic_0201534068_p18223161825216"></a><a name="zh-cn_topic_0201534068_p18223161825216"></a>DNS名称</p>
+<p id="zh-cn_topic_0201534068_p3622189141"><a name="zh-cn_topic_0201534068_p3622189141"></a><a name="zh-cn_topic_0201534068_p3622189141"></a>该参数当前仅在“华南-广州”开放</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0201534068_row17174241670"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534068_p492133065713"><a name="zh-cn_topic_0201534068_p492133065713"></a><a name="zh-cn_topic_0201534068_p492133065713"></a>dns_domain</p>
@@ -215,6 +250,7 @@ GET https://{Endpoint}/v2.0/floatingips?id={fip_id}&router_id={router_id}&floati
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534068_p16929300573"><a name="zh-cn_topic_0201534068_p16929300573"></a><a name="zh-cn_topic_0201534068_p16929300573"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534068_p3921230175711"><a name="zh-cn_topic_0201534068_p3921230175711"></a><a name="zh-cn_topic_0201534068_p3921230175711"></a>DNS域地址</p>
+<p id="zh-cn_topic_0201534068_p16100171118144"><a name="zh-cn_topic_0201534068_p16100171118144"></a><a name="zh-cn_topic_0201534068_p16100171118144"></a>该参数当前仅在“华南-广州”开放</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0201534068_row1418142410714"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534068_p1953114119914"><a name="zh-cn_topic_0201534068_p1953114119914"></a><a name="zh-cn_topic_0201534068_p1953114119914"></a>created_at</p>
@@ -312,5 +348,5 @@ GET https://{Endpoint}/v2.0/floatingips?limit=1
 
 ## 错误码<a name="zh-cn_topic_0201534068_section85821649202813"></a>
 
-请参见[错误码](错误码.md#eip_api05_0002)。
+请参见[错误码](错误码.md)。
 

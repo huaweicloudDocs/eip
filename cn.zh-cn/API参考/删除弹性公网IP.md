@@ -46,7 +46,9 @@ DELETE /v1/\{project\_id\}/publicips/\{publicip\_id\}
 
 -   请求样例
 
-    无
+    ```
+    DELETE https://{Endpoint}/v1/{project_id}/publicips
+    ```
 
 
 ## 响应消息<a name="zh-cn_topic_0201534180_section31297682"></a>
@@ -59,6 +61,15 @@ DELETE /v1/\{project\_id\}/publicips/\{publicip\_id\}
 
     无
 
+    或
+
+    ```
+    {
+           "code":"xxx",
+           "message":"xxxxx"
+    }
+    ```
+
 
 ## 状态码<a name="zh-cn_topic_0201534180_section31981619"></a>
 
@@ -66,5 +77,5 @@ DELETE /v1/\{project\_id\}/publicips/\{publicip\_id\}
 
 ## 错误码<a name="zh-cn_topic_0201534180_section85821649202813"></a>
 
-请参考[错误码](错误码.md#eip_api05_0002)。
+请参考[错误码](错误码.md)。
 
