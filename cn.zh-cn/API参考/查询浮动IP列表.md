@@ -342,8 +342,6 @@ GET https://{Endpoint}/v2.0/floatingips?limit=1
 }
 ```
 
-## 状态码<a name="zh-cn_topic_0201534068_section10470352390"></a>
-
 请参见[状态码](状态码.md#eip_api05_0001)。
 
 ## 错误码<a name="zh-cn_topic_0201534068_section85821649202813"></a>

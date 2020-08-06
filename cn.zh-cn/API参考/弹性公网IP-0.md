@@ -13,7 +13,7 @@
 </th>
 </tr>
 </thead>
-<tbody><tr id="zh-cn_topic_0201534207_row943674133617"><td class="cellrowborder" valign="top" width="13.23%" headers="mcps1.1.6.1.1 "><p id="zh-cn_topic_0201534207_p13232958145117"><a name="zh-cn_topic_0201534207_p13232958145117"></a><a name="zh-cn_topic_0201534207_p13232958145117"></a>申请弹性公网IP</p>
+<tbody><tr id="zh-cn_topic_0201534207_row943674133617"><td class="cellrowborder" valign="top" width="13.23%" headers="mcps1.1.6.1.1 "><p id="zh-cn_topic_0201534207_p13232958145117"><a name="zh-cn_topic_0201534207_p13232958145117"></a><a name="zh-cn_topic_0201534207_p13232958145117"></a>申请<span id="zh-cn_topic_0201534207_text10897104815286"><a name="zh-cn_topic_0201534207_text10897104815286"></a><a name="zh-cn_topic_0201534207_text10897104815286"></a></span><span id="zh-cn_topic_0201534207_text1689724812819"><a name="zh-cn_topic_0201534207_text1689724812819"></a><a name="zh-cn_topic_0201534207_text1689724812819"></a>弹性公网IP</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="29.330000000000002%" headers="mcps1.1.6.1.2 "><p id="zh-cn_topic_0201534207_p144365416368"><a name="zh-cn_topic_0201534207_p144365416368"></a><a name="zh-cn_topic_0201534207_p144365416368"></a>POST /v1/{project_id}/publicips</p>
 </td>
@@ -24,7 +24,7 @@
 <td class="cellrowborder" valign="top" width="21.490000000000002%" headers="mcps1.1.6.1.5 "><p id="zh-cn_topic_0201534207_p193691154133112"><a name="zh-cn_topic_0201534207_p193691154133112"></a><a name="zh-cn_topic_0201534207_p193691154133112"></a>√</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0201534207_row343704173619"><td class="cellrowborder" valign="top" width="13.23%" headers="mcps1.1.6.1.1 "><p id="zh-cn_topic_0201534207_p1623218589512"><a name="zh-cn_topic_0201534207_p1623218589512"></a><a name="zh-cn_topic_0201534207_p1623218589512"></a>查询弹性公网IP</p>
+<tr id="zh-cn_topic_0201534207_row343704173619"><td class="cellrowborder" valign="top" width="13.23%" headers="mcps1.1.6.1.1 "><p id="zh-cn_topic_0201534207_p1623218589512"><a name="zh-cn_topic_0201534207_p1623218589512"></a><a name="zh-cn_topic_0201534207_p1623218589512"></a>查询<span id="zh-cn_topic_0201534207_text11285177584"><a name="zh-cn_topic_0201534207_text11285177584"></a><a name="zh-cn_topic_0201534207_text11285177584"></a></span><span id="zh-cn_topic_0201534207_text42816171584"><a name="zh-cn_topic_0201534207_text42816171584"></a><a name="zh-cn_topic_0201534207_text42816171584"></a>弹性公网IP</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="29.330000000000002%" headers="mcps1.1.6.1.2 "><p id="zh-cn_topic_0201534207_p174371341133618"><a name="zh-cn_topic_0201534207_p174371341133618"></a><a name="zh-cn_topic_0201534207_p174371341133618"></a>GET /v1/{project_id}/publicips/{publicip_id}</p>
 </td>
@@ -35,7 +35,7 @@
 <td class="cellrowborder" valign="top" width="21.490000000000002%" headers="mcps1.1.6.1.5 "><p id="zh-cn_topic_0201534207_p153706545313"><a name="zh-cn_topic_0201534207_p153706545313"></a><a name="zh-cn_topic_0201534207_p153706545313"></a>√</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0201534207_row34371241143616"><td class="cellrowborder" valign="top" width="13.23%" headers="mcps1.1.6.1.1 "><p id="zh-cn_topic_0201534207_p182321558155116"><a name="zh-cn_topic_0201534207_p182321558155116"></a><a name="zh-cn_topic_0201534207_p182321558155116"></a>查询弹性公网IP列表</p>
+<tr id="zh-cn_topic_0201534207_row34371241143616"><td class="cellrowborder" valign="top" width="13.23%" headers="mcps1.1.6.1.1 "><p id="zh-cn_topic_0201534207_p182321558155116"><a name="zh-cn_topic_0201534207_p182321558155116"></a><a name="zh-cn_topic_0201534207_p182321558155116"></a>查询<span id="zh-cn_topic_0201534207_text4675527175812"><a name="zh-cn_topic_0201534207_text4675527175812"></a><a name="zh-cn_topic_0201534207_text4675527175812"></a></span><span id="zh-cn_topic_0201534207_text8675142785815"><a name="zh-cn_topic_0201534207_text8675142785815"></a><a name="zh-cn_topic_0201534207_text8675142785815"></a>弹性公网IP</span>列表</p>
 </td>
 <td class="cellrowborder" valign="top" width="29.330000000000002%" headers="mcps1.1.6.1.2 "><p id="zh-cn_topic_0201534207_p16437174193619"><a name="zh-cn_topic_0201534207_p16437174193619"></a><a name="zh-cn_topic_0201534207_p16437174193619"></a>GET /v1/{project_id}/publicips</p>
 </td>
@@ -46,7 +46,7 @@
 <td class="cellrowborder" valign="top" width="21.490000000000002%" headers="mcps1.1.6.1.5 "><p id="zh-cn_topic_0201534207_p1370175418319"><a name="zh-cn_topic_0201534207_p1370175418319"></a><a name="zh-cn_topic_0201534207_p1370175418319"></a>√</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0201534207_row443713412363"><td class="cellrowborder" valign="top" width="13.23%" headers="mcps1.1.6.1.1 "><p id="zh-cn_topic_0201534207_p623295805113"><a name="zh-cn_topic_0201534207_p623295805113"></a><a name="zh-cn_topic_0201534207_p623295805113"></a>更新弹性公网IP</p>
+<tr id="zh-cn_topic_0201534207_row443713412363"><td class="cellrowborder" valign="top" width="13.23%" headers="mcps1.1.6.1.1 "><p id="zh-cn_topic_0201534207_p623295805113"><a name="zh-cn_topic_0201534207_p623295805113"></a><a name="zh-cn_topic_0201534207_p623295805113"></a>更新<span id="zh-cn_topic_0201534207_text4983204019588"><a name="zh-cn_topic_0201534207_text4983204019588"></a><a name="zh-cn_topic_0201534207_text4983204019588"></a></span><span id="zh-cn_topic_0201534207_text10983114025819"><a name="zh-cn_topic_0201534207_text10983114025819"></a><a name="zh-cn_topic_0201534207_text10983114025819"></a>弹性公网IP</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="29.330000000000002%" headers="mcps1.1.6.1.2 "><p id="zh-cn_topic_0201534207_p4437194193614"><a name="zh-cn_topic_0201534207_p4437194193614"></a><a name="zh-cn_topic_0201534207_p4437194193614"></a>PUT /v1/{project_id}/publicips/{publicip_id}</p>
 </td>
@@ -57,7 +57,7 @@
 <td class="cellrowborder" valign="top" width="21.490000000000002%" headers="mcps1.1.6.1.5 "><p id="zh-cn_topic_0201534207_p19370155411318"><a name="zh-cn_topic_0201534207_p19370155411318"></a><a name="zh-cn_topic_0201534207_p19370155411318"></a>√</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0201534207_row10437144143617"><td class="cellrowborder" valign="top" width="13.23%" headers="mcps1.1.6.1.1 "><p id="zh-cn_topic_0201534207_p923213587517"><a name="zh-cn_topic_0201534207_p923213587517"></a><a name="zh-cn_topic_0201534207_p923213587517"></a>删除弹性公网IP</p>
+<tr id="zh-cn_topic_0201534207_row10437144143617"><td class="cellrowborder" valign="top" width="13.23%" headers="mcps1.1.6.1.1 "><p id="zh-cn_topic_0201534207_p923213587517"><a name="zh-cn_topic_0201534207_p923213587517"></a><a name="zh-cn_topic_0201534207_p923213587517"></a>删除<span id="zh-cn_topic_0201534207_text9422745175810"><a name="zh-cn_topic_0201534207_text9422745175810"></a><a name="zh-cn_topic_0201534207_text9422745175810"></a></span><span id="zh-cn_topic_0201534207_text144221945115816"><a name="zh-cn_topic_0201534207_text144221945115816"></a><a name="zh-cn_topic_0201534207_text144221945115816"></a>弹性公网IP</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="29.330000000000002%" headers="mcps1.1.6.1.2 "><p id="zh-cn_topic_0201534207_p2437114115362"><a name="zh-cn_topic_0201534207_p2437114115362"></a><a name="zh-cn_topic_0201534207_p2437114115362"></a>DELETE /v1/{project_id}/publicips/{publicip_id}</p>
 </td>
@@ -68,7 +68,7 @@
 <td class="cellrowborder" valign="top" width="21.490000000000002%" headers="mcps1.1.6.1.5 "><p id="zh-cn_topic_0201534207_p10370105493116"><a name="zh-cn_topic_0201534207_p10370105493116"></a><a name="zh-cn_topic_0201534207_p10370105493116"></a>√</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0201534207_row06971339262"><td class="cellrowborder" valign="top" width="13.23%" headers="mcps1.1.6.1.1 "><p id="zh-cn_topic_0201534207_p643581217266"><a name="zh-cn_topic_0201534207_p643581217266"></a><a name="zh-cn_topic_0201534207_p643581217266"></a>申请包周期弹性公网IP</p>
+<tr id="zh-cn_topic_0201534207_row06971339262"><td class="cellrowborder" valign="top" width="13.23%" headers="mcps1.1.6.1.1 "><p id="zh-cn_topic_0201534207_p643581217266"><a name="zh-cn_topic_0201534207_p643581217266"></a><a name="zh-cn_topic_0201534207_p643581217266"></a>申请包周期<span id="zh-cn_topic_0201534207_text16341125116584"><a name="zh-cn_topic_0201534207_text16341125116584"></a><a name="zh-cn_topic_0201534207_text16341125116584"></a></span><span id="zh-cn_topic_0201534207_text9341135115817"><a name="zh-cn_topic_0201534207_text9341135115817"></a><a name="zh-cn_topic_0201534207_text9341135115817"></a>弹性公网IP</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="29.330000000000002%" headers="mcps1.1.6.1.2 "><p id="zh-cn_topic_0201534207_p17435812172618"><a name="zh-cn_topic_0201534207_p17435812172618"></a><a name="zh-cn_topic_0201534207_p17435812172618"></a>POST /v2.0/{project_id}/publicips</p>
 </td>

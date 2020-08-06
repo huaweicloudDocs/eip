@@ -32,7 +32,7 @@ PUT /v1/\{project\_id\}/publicips/\{publicip\_id\}
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534286_p9191297"><a name="zh-cn_topic_0201534286_p9191297"></a><a name="zh-cn_topic_0201534286_p9191297"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534286_p6297612"><a name="zh-cn_topic_0201534286_p6297612"></a><a name="zh-cn_topic_0201534286_p6297612"></a>弹性公网IP唯一标识</p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534286_p6297612"><a name="zh-cn_topic_0201534286_p6297612"></a><a name="zh-cn_topic_0201534286_p6297612"></a><span id="zh-cn_topic_0201534286_text1431316332138"><a name="zh-cn_topic_0201534286_text1431316332138"></a><a name="zh-cn_topic_0201534286_text1431316332138"></a></span><span id="zh-cn_topic_0201534286_text1431383314138"><a name="zh-cn_topic_0201534286_text1431383314138"></a><a name="zh-cn_topic_0201534286_text1431383314138"></a>弹性公网IP</span>唯一标识</p>
 </td>
 </tr>
 </tbody>
@@ -61,7 +61,7 @@ PUT /v1/\{project\_id\}/publicips/\{publicip\_id\}
     </td>
     <td class="cellrowborder" valign="top" width="21.43%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534286_p3878783152226"><a name="zh-cn_topic_0201534286_p3878783152226"></a><a name="zh-cn_topic_0201534286_p3878783152226"></a>Object</p>
     </td>
-    <td class="cellrowborder" valign="top" width="47.18%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534286_p9060565152226"><a name="zh-cn_topic_0201534286_p9060565152226"></a><a name="zh-cn_topic_0201534286_p9060565152226"></a>弹性公网IP对象，请参见<a href="#zh-cn_topic_0201534286_table23403840">表3</a>。</p>
+    <td class="cellrowborder" valign="top" width="47.18%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534286_p9060565152226"><a name="zh-cn_topic_0201534286_p9060565152226"></a><a name="zh-cn_topic_0201534286_p9060565152226"></a><span id="zh-cn_topic_0201534286_text442483841316"><a name="zh-cn_topic_0201534286_text442483841316"></a><a name="zh-cn_topic_0201534286_text442483841316"></a></span><span id="zh-cn_topic_0201534286_text16424138181315"><a name="zh-cn_topic_0201534286_text16424138181315"></a><a name="zh-cn_topic_0201534286_text16424138181315"></a>弹性公网IP</span>对象，请参见<a href="#zh-cn_topic_0201534286_table23403840">表3</a>。</p>
     </td>
     </tr>
     </tbody>
@@ -86,7 +86,7 @@ PUT /v1/\{project\_id\}/publicips/\{publicip\_id\}
     </td>
     <td class="cellrowborder" valign="top" width="17.29%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534286_p6615596018819"><a name="zh-cn_topic_0201534286_p6615596018819"></a><a name="zh-cn_topic_0201534286_p6615596018819"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="30.830000000000002%" headers="mcps1.2.5.1.4 "><a name="zh-cn_topic_0201534286_ul1580299162914"></a><a name="zh-cn_topic_0201534286_ul1580299162914"></a><ul id="zh-cn_topic_0201534286_ul1580299162914"><li>功能说明：端口id。</li><li>约束：必须是存在的端口id，如果不带该参数或者值为空时为解除绑定弹性公网IP，如果该端口不存在或端口已绑定弹性公网IP则会提示出错，和ip_version字段互斥，不能同时更新。</li></ul>
+    <td class="cellrowborder" valign="top" width="30.830000000000002%" headers="mcps1.2.5.1.4 "><a name="zh-cn_topic_0201534286_ul1580299162914"></a><a name="zh-cn_topic_0201534286_ul1580299162914"></a><ul id="zh-cn_topic_0201534286_ul1580299162914"><li>功能说明：端口id。</li><li>约束：必须是存在的端口id，如果不带该参数或者值为空时为解除绑定<span id="zh-cn_topic_0201534286_text11296114151312"><a name="zh-cn_topic_0201534286_text11296114151312"></a><a name="zh-cn_topic_0201534286_text11296114151312"></a></span><span id="zh-cn_topic_0201534286_text5296134101313"><a name="zh-cn_topic_0201534286_text5296134101313"></a><a name="zh-cn_topic_0201534286_text5296134101313"></a>弹性公网IP</span>，如果该端口不存在或端口已绑定<span id="zh-cn_topic_0201534286_text180394391310"><a name="zh-cn_topic_0201534286_text180394391310"></a><a name="zh-cn_topic_0201534286_text180394391310"></a></span><span id="zh-cn_topic_0201534286_text118032432136"><a name="zh-cn_topic_0201534286_text118032432136"></a><a name="zh-cn_topic_0201534286_text118032432136"></a>弹性公网IP</span>则会提示出错，和ip_version字段互斥，不能同时更新。</li></ul>
     </td>
     </tr>
     <tr id="zh-cn_topic_0201534286_row126751018141713"><td class="cellrowborder" valign="top" width="30.830000000000002%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534286_p23901530141713"><a name="zh-cn_topic_0201534286_p23901530141713"></a><a name="zh-cn_topic_0201534286_p23901530141713"></a>ip_version</p>
@@ -148,7 +148,7 @@ PUT /v1/\{project\_id\}/publicips/\{publicip\_id\}
     </td>
     <td class="cellrowborder" valign="top" width="25.509999999999998%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534286_p50907501152250"><a name="zh-cn_topic_0201534286_p50907501152250"></a><a name="zh-cn_topic_0201534286_p50907501152250"></a><em id="zh-cn_topic_0201534286_i1810218131512"><a name="zh-cn_topic_0201534286_i1810218131512"></a><a name="zh-cn_topic_0201534286_i1810218131512"></a>Object</em></p>
     </td>
-    <td class="cellrowborder" valign="top" width="56.15%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534286_p366643152250"><a name="zh-cn_topic_0201534286_p366643152250"></a><a name="zh-cn_topic_0201534286_p366643152250"></a>弹性公网IP对象，请参见<a href="#zh-cn_topic_0201534286_table83964341880">表5</a>。</p>
+    <td class="cellrowborder" valign="top" width="56.15%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534286_p366643152250"><a name="zh-cn_topic_0201534286_p366643152250"></a><a name="zh-cn_topic_0201534286_p366643152250"></a><span id="zh-cn_topic_0201534286_text2082852181316"><a name="zh-cn_topic_0201534286_text2082852181316"></a><a name="zh-cn_topic_0201534286_text2082852181316"></a></span><span id="zh-cn_topic_0201534286_text782552191316"><a name="zh-cn_topic_0201534286_text782552191316"></a><a name="zh-cn_topic_0201534286_text782552191316"></a>弹性公网IP</span>对象，请参见<a href="#zh-cn_topic_0201534286_table83964341880">表5</a>。</p>
     </td>
     </tr>
     </tbody>
@@ -169,14 +169,14 @@ PUT /v1/\{project\_id\}/publicips/\{publicip\_id\}
     </td>
     <td class="cellrowborder" valign="top" width="27.90720927907209%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534286_p623914921880"><a name="zh-cn_topic_0201534286_p623914921880"></a><a name="zh-cn_topic_0201534286_p623914921880"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534286_p205460611880"><a name="zh-cn_topic_0201534286_p205460611880"></a><a name="zh-cn_topic_0201534286_p205460611880"></a>弹性公网IP唯一标识</p>
+    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534286_p205460611880"><a name="zh-cn_topic_0201534286_p205460611880"></a><a name="zh-cn_topic_0201534286_p205460611880"></a><span id="zh-cn_topic_0201534286_text1480155511314"><a name="zh-cn_topic_0201534286_text1480155511314"></a><a name="zh-cn_topic_0201534286_text1480155511314"></a></span><span id="zh-cn_topic_0201534286_text16481555171315"><a name="zh-cn_topic_0201534286_text16481555171315"></a><a name="zh-cn_topic_0201534286_text16481555171315"></a>弹性公网IP</span>唯一标识</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0201534286_row506968211880"><td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534286_p128018091880"><a name="zh-cn_topic_0201534286_p128018091880"></a><a name="zh-cn_topic_0201534286_p128018091880"></a>status</p>
     </td>
     <td class="cellrowborder" valign="top" width="27.90720927907209%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534286_p394853281880"><a name="zh-cn_topic_0201534286_p394853281880"></a><a name="zh-cn_topic_0201534286_p394853281880"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534286_ul263945115243"></a><a name="zh-cn_topic_0201534286_ul263945115243"></a><ul id="zh-cn_topic_0201534286_ul263945115243"><li>功能说明：弹性公网IP的状态</li><li>取值范围：<a name="zh-cn_topic_0201534286_ul7905205815810"></a><a name="zh-cn_topic_0201534286_ul7905205815810"></a><ul id="zh-cn_topic_0201534286_ul7905205815810"><li>FREEZED：冻结</li><li>BIND_ERROR：绑定失败</li><li>BINDING：绑定中</li><li>PENDING_DELETE：释放中</li><li>PENDING_CREATE：创建中</li><li>PENDING_UPDATE：更新中</li><li>DOWN：未绑定</li><li>ACTIVE：绑定</li><li>ELB：绑定ELB</li><li>ERROR：异常失败</li></ul>
+    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534286_ul263945115243"></a><a name="zh-cn_topic_0201534286_ul263945115243"></a><ul id="zh-cn_topic_0201534286_ul263945115243"><li>功能说明：<span id="zh-cn_topic_0201534286_text4273258121317"><a name="zh-cn_topic_0201534286_text4273258121317"></a><a name="zh-cn_topic_0201534286_text4273258121317"></a></span><span id="zh-cn_topic_0201534286_text15273458151319"><a name="zh-cn_topic_0201534286_text15273458151319"></a><a name="zh-cn_topic_0201534286_text15273458151319"></a>弹性公网IP</span>的状态</li><li>取值范围：<a name="zh-cn_topic_0201534286_ul7905205815810"></a><a name="zh-cn_topic_0201534286_ul7905205815810"></a><ul id="zh-cn_topic_0201534286_ul7905205815810"><li>FREEZED：冻结</li><li>BIND_ERROR：绑定失败</li><li>BINDING：绑定中</li><li>PENDING_DELETE：释放中</li><li>PENDING_CREATE：创建中</li><li>PENDING_UPDATE：更新中</li><li>DOWN：未绑定</li><li>ACTIVE：绑定</li><li>ELB：绑定ELB</li><li>ERROR：异常失败</li></ul>
     </li></ul>
     </td>
     </tr>
@@ -185,14 +185,14 @@ PUT /v1/\{project\_id\}/publicips/\{publicip\_id\}
     <td class="cellrowborder" valign="top" width="27.90720927907209%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534286_p12971231132410"><a name="zh-cn_topic_0201534286_p12971231132410"></a><a name="zh-cn_topic_0201534286_p12971231132410"></a>Object</p>
     </td>
     <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534286_p5644118182514"><a name="zh-cn_topic_0201534286_p5644118182514"></a><a name="zh-cn_topic_0201534286_p5644118182514"></a>功能说明：额外参数，包括订单id、产品id等信息，详情请参见<a href="#zh-cn_topic_0201534286_table66651219193417">表6</a>。</p>
-    <p id="zh-cn_topic_0201534286_p16644118152519"><a name="zh-cn_topic_0201534286_p16644118152519"></a><a name="zh-cn_topic_0201534286_p16644118152519"></a>约束：如果profile不为空，说明是包周期的弹性公网IP</p>
+    <p id="zh-cn_topic_0201534286_p16644118152519"><a name="zh-cn_topic_0201534286_p16644118152519"></a><a name="zh-cn_topic_0201534286_p16644118152519"></a>约束：如果profile不为空，说明是包周期的<span id="zh-cn_topic_0201534286_text1242916461411"><a name="zh-cn_topic_0201534286_text1242916461411"></a><a name="zh-cn_topic_0201534286_text1242916461411"></a></span><span id="zh-cn_topic_0201534286_text1542911419140"><a name="zh-cn_topic_0201534286_text1542911419140"></a><a name="zh-cn_topic_0201534286_text1542911419140"></a>弹性公网IP</span></p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0201534286_row230260811880"><td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534286_p30749271"><a name="zh-cn_topic_0201534286_p30749271"></a><a name="zh-cn_topic_0201534286_p30749271"></a>type</p>
     </td>
     <td class="cellrowborder" valign="top" width="27.90720927907209%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534286_p379401841880"><a name="zh-cn_topic_0201534286_p379401841880"></a><a name="zh-cn_topic_0201534286_p379401841880"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534286_ul7176216121014"></a><a name="zh-cn_topic_0201534286_ul7176216121014"></a><ul id="zh-cn_topic_0201534286_ul7176216121014"><li>功能说明：弹性公网IP的类型</li><li>取值范围：<em id="zh-cn_topic_0201534286_i16850184017499"><a name="zh-cn_topic_0201534286_i16850184017499"></a><a name="zh-cn_topic_0201534286_i16850184017499"></a>5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP）</em><a name="zh-cn_topic_0201534286_ul585004064911"></a><a name="zh-cn_topic_0201534286_ul585004064911"></a><ul id="zh-cn_topic_0201534286_ul585004064911"><li>东北-大连：5_telcom、5_union</li><li>华南-广州：5_bgp、5_sbgp</li><li>华东-上海一：5_bgp、5_sbgp</li><li>华东-上海二：5_bgp、5_sbgp</li><li>华北-北京一：5_bgp、5_sbgp</li><li>亚太-香港：5_bgp</li><li>亚太-曼谷：5_bgp</li><li>亚太-新加坡：5_bgp</li><li>非洲-约翰内斯堡：5_bgp</li><li>西南-贵阳一：5_sbgp</li><li>华北-北京四：5_bgp、5_sbgp</li><li>拉美-圣地亚哥：5_bgp</li><li>拉美-圣保罗一：5_bgp</li><li>拉美-墨西哥城一：5_bgp</li><li>拉美-布宜诺斯艾利一：5_bgp</li><li>拉美-利马一：5_bgp</li><li>拉美-圣地亚哥二：5_bgp</li></ul>
+    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534286_ul7176216121014"></a><a name="zh-cn_topic_0201534286_ul7176216121014"></a><ul id="zh-cn_topic_0201534286_ul7176216121014"><li>功能说明：<span id="zh-cn_topic_0201534286_text6844128201420"><a name="zh-cn_topic_0201534286_text6844128201420"></a><a name="zh-cn_topic_0201534286_text6844128201420"></a></span><span id="zh-cn_topic_0201534286_text168441082140"><a name="zh-cn_topic_0201534286_text168441082140"></a><a name="zh-cn_topic_0201534286_text168441082140"></a>弹性公网IP</span>的类型</li><li>取值范围：<em id="zh-cn_topic_0201534286_i16850184017499"><a name="zh-cn_topic_0201534286_i16850184017499"></a><a name="zh-cn_topic_0201534286_i16850184017499"></a>5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP）</em><a name="zh-cn_topic_0201534286_ul585004064911"></a><a name="zh-cn_topic_0201534286_ul585004064911"></a><ul id="zh-cn_topic_0201534286_ul585004064911"><li>东北-大连：5_telcom、5_union</li><li>华南-广州：5_bgp、5_sbgp</li><li>华东-上海一：5_bgp、5_sbgp</li><li>华东-上海二：5_bgp、5_sbgp</li><li>华北-北京一：5_bgp、5_sbgp</li><li>亚太-香港：5_bgp</li><li>亚太-曼谷：5_bgp</li><li>亚太-新加坡：5_bgp</li><li>非洲-约翰内斯堡：5_bgp</li><li>西南-贵阳一：5_sbgp</li><li>华北-北京四：5_bgp、5_sbgp</li><li>拉美-圣地亚哥：5_bgp</li><li>拉美-圣保罗一：5_bgp</li><li>拉美-墨西哥城一：5_bgp</li><li>拉美-布宜诺斯艾利一：5_bgp</li><li>拉美-利马一：5_bgp</li><li>拉美-圣地亚哥二：5_bgp</li></ul>
     </li><li>约束：<a name="zh-cn_topic_0201534286_ul9738153015499"></a><a name="zh-cn_topic_0201534286_ul9738153015499"></a><ul id="zh-cn_topic_0201534286_ul9738153015499"><li>必须是系统具体支持的类型</li><li>publicip_id为IPv4端口，所以"publicip_type"字段未给定时，默认为5_bgp。</li></ul>
     </li></ul>
     </td>
@@ -201,14 +201,14 @@ PUT /v1/\{project\_id\}/publicips/\{publicip\_id\}
     </td>
     <td class="cellrowborder" valign="top" width="27.90720927907209%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534286_p35761552124618"><a name="zh-cn_topic_0201534286_p35761552124618"></a><a name="zh-cn_topic_0201534286_p35761552124618"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534286_p19576252174619"><a name="zh-cn_topic_0201534286_p19576252174619"></a><a name="zh-cn_topic_0201534286_p19576252174619"></a>IPv4时是申请到的弹性公网IP地址，IPv6时是IPv6地址对应的IPv4地址</p>
+    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534286_p19576252174619"><a name="zh-cn_topic_0201534286_p19576252174619"></a><a name="zh-cn_topic_0201534286_p19576252174619"></a>IPv4时是申请到的<span id="zh-cn_topic_0201534286_text817712711146"><a name="zh-cn_topic_0201534286_text817712711146"></a><a name="zh-cn_topic_0201534286_text817712711146"></a></span><span id="zh-cn_topic_0201534286_text31771927201410"><a name="zh-cn_topic_0201534286_text31771927201410"></a><a name="zh-cn_topic_0201534286_text31771927201410"></a>弹性公网IP</span>地址，IPv6时是IPv6地址对应的IPv4地址</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0201534286_row6663943910"><td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534286_p117521510894"><a name="zh-cn_topic_0201534286_p117521510894"></a><a name="zh-cn_topic_0201534286_p117521510894"></a>public_ipv6_address</p>
     </td>
     <td class="cellrowborder" valign="top" width="27.90720927907209%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534286_p97524108911"><a name="zh-cn_topic_0201534286_p97524108911"></a><a name="zh-cn_topic_0201534286_p97524108911"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534286_p167581149102812"><a name="zh-cn_topic_0201534286_p167581149102812"></a><a name="zh-cn_topic_0201534286_p167581149102812"></a>IPv4时无此字段，IPv6时为申请到的弹性公网IP地址</p>
+    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534286_p167581149102812"><a name="zh-cn_topic_0201534286_p167581149102812"></a><a name="zh-cn_topic_0201534286_p167581149102812"></a>IPv4时无此字段，IPv6时为申请到的<span id="zh-cn_topic_0201534286_text714903514150"><a name="zh-cn_topic_0201534286_text714903514150"></a><a name="zh-cn_topic_0201534286_text714903514150"></a></span><span id="zh-cn_topic_0201534286_text0149435121516"><a name="zh-cn_topic_0201534286_text0149435121516"></a><a name="zh-cn_topic_0201534286_text0149435121516"></a>弹性公网IP</span>地址</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0201534286_row2030210714336"><td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534286_p5577105234617"><a name="zh-cn_topic_0201534286_p5577105234617"></a><a name="zh-cn_topic_0201534286_p5577105234617"></a>ip_version</p>
@@ -223,14 +223,14 @@ PUT /v1/\{project\_id\}/publicips/\{publicip\_id\}
     </td>
     <td class="cellrowborder" valign="top" width="27.90720927907209%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534286_p60695041880"><a name="zh-cn_topic_0201534286_p60695041880"></a><a name="zh-cn_topic_0201534286_p60695041880"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534286_ul1693412582014"></a><a name="zh-cn_topic_0201534286_ul1693412582014"></a><ul id="zh-cn_topic_0201534286_ul1693412582014"><li>功能说明：绑定弹性公网IP的私有IP地址</li><li>约束：只有绑定了的弹性公网IP查询才会返回该参数</li></ul>
+    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534286_ul1693412582014"></a><a name="zh-cn_topic_0201534286_ul1693412582014"></a><ul id="zh-cn_topic_0201534286_ul1693412582014"><li>功能说明：绑定<span id="zh-cn_topic_0201534286_text28951341151511"><a name="zh-cn_topic_0201534286_text28951341151511"></a><a name="zh-cn_topic_0201534286_text28951341151511"></a></span><span id="zh-cn_topic_0201534286_text198953415153"><a name="zh-cn_topic_0201534286_text198953415153"></a><a name="zh-cn_topic_0201534286_text198953415153"></a>弹性公网IP</span>的私有IP地址</li><li>约束：只有绑定了的<span id="zh-cn_topic_0201534286_text1879311449153"><a name="zh-cn_topic_0201534286_text1879311449153"></a><a name="zh-cn_topic_0201534286_text1879311449153"></a></span><span id="zh-cn_topic_0201534286_text1779316449153"><a name="zh-cn_topic_0201534286_text1779316449153"></a><a name="zh-cn_topic_0201534286_text1779316449153"></a>弹性公网IP</span>查询才会返回该参数</li></ul>
     </td>
     </tr>
     <tr id="zh-cn_topic_0201534286_row264614551880"><td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534286_p630030811880"><a name="zh-cn_topic_0201534286_p630030811880"></a><a name="zh-cn_topic_0201534286_p630030811880"></a>port_id</p>
     </td>
     <td class="cellrowborder" valign="top" width="27.90720927907209%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534286_p397229231880"><a name="zh-cn_topic_0201534286_p397229231880"></a><a name="zh-cn_topic_0201534286_p397229231880"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534286_ul420471472010"></a><a name="zh-cn_topic_0201534286_ul420471472010"></a><ul id="zh-cn_topic_0201534286_ul420471472010"><li>功能说明：端口id。</li><li>约束：只有绑定了的弹性公网IP查询才会返回该参数</li></ul>
+    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534286_ul420471472010"></a><a name="zh-cn_topic_0201534286_ul420471472010"></a><ul id="zh-cn_topic_0201534286_ul420471472010"><li>功能说明：端口id。</li><li>约束：只有绑定了的<span id="zh-cn_topic_0201534286_text144209488151"><a name="zh-cn_topic_0201534286_text144209488151"></a><a name="zh-cn_topic_0201534286_text144209488151"></a></span><span id="zh-cn_topic_0201534286_text54209481153"><a name="zh-cn_topic_0201534286_text54209481153"></a><a name="zh-cn_topic_0201534286_text54209481153"></a>弹性公网IP</span>查询才会返回该参数</li></ul>
     </td>
     </tr>
     <tr id="zh-cn_topic_0201534286_row340905521880"><td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534286_p98713501880"><a name="zh-cn_topic_0201534286_p98713501880"></a><a name="zh-cn_topic_0201534286_p98713501880"></a>tenant_id</p>
@@ -244,14 +244,14 @@ PUT /v1/\{project\_id\}/publicips/\{publicip\_id\}
     </td>
     <td class="cellrowborder" valign="top" width="27.90720927907209%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534286_p92119381880"><a name="zh-cn_topic_0201534286_p92119381880"></a><a name="zh-cn_topic_0201534286_p92119381880"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534286_p36292894"><a name="zh-cn_topic_0201534286_p36292894"></a><a name="zh-cn_topic_0201534286_p36292894"></a>弹性公网IP申请时间（UTC）</p>
+    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534286_p36292894"><a name="zh-cn_topic_0201534286_p36292894"></a><a name="zh-cn_topic_0201534286_p36292894"></a><span id="zh-cn_topic_0201534286_text1175715325168"><a name="zh-cn_topic_0201534286_text1175715325168"></a><a name="zh-cn_topic_0201534286_text1175715325168"></a></span><span id="zh-cn_topic_0201534286_text075733212164"><a name="zh-cn_topic_0201534286_text075733212164"></a><a name="zh-cn_topic_0201534286_text075733212164"></a>弹性公网IP</span>申请时间（UTC）</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0201534286_row46164031880"><td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534286_p383843571880"><a name="zh-cn_topic_0201534286_p383843571880"></a><a name="zh-cn_topic_0201534286_p383843571880"></a>bandwidth_id</p>
     </td>
     <td class="cellrowborder" valign="top" width="27.90720927907209%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534286_p473107141880"><a name="zh-cn_topic_0201534286_p473107141880"></a><a name="zh-cn_topic_0201534286_p473107141880"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534286_p3934181618641"><a name="zh-cn_topic_0201534286_p3934181618641"></a><a name="zh-cn_topic_0201534286_p3934181618641"></a>弹性公网IP对应带宽ID</p>
+    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534286_p3934181618641"><a name="zh-cn_topic_0201534286_p3934181618641"></a><a name="zh-cn_topic_0201534286_p3934181618641"></a><span id="zh-cn_topic_0201534286_text334073671610"><a name="zh-cn_topic_0201534286_text334073671610"></a><a name="zh-cn_topic_0201534286_text334073671610"></a></span><span id="zh-cn_topic_0201534286_text13402366164"><a name="zh-cn_topic_0201534286_text13402366164"></a><a name="zh-cn_topic_0201534286_text13402366164"></a>弹性公网IP</span>对应带宽ID</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0201534286_row626637421880"><td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534286_p425983371880"><a name="zh-cn_topic_0201534286_p425983371880"></a><a name="zh-cn_topic_0201534286_p425983371880"></a>bandwidth_size</p>
@@ -265,7 +265,7 @@ PUT /v1/\{project\_id\}/publicips/\{publicip\_id\}
     </td>
     <td class="cellrowborder" valign="top" width="27.90720927907209%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534286_p21369006155933"><a name="zh-cn_topic_0201534286_p21369006155933"></a><a name="zh-cn_topic_0201534286_p21369006155933"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534286_ul2255712095"></a><a name="zh-cn_topic_0201534286_ul2255712095"></a><ul id="zh-cn_topic_0201534286_ul2255712095"><li>功能说明：弹性公网IP的带宽类型</li><li>取值范围：PER，WHOLE。<a name="zh-cn_topic_0201534286_ul729412507220"></a><a name="zh-cn_topic_0201534286_ul729412507220"></a><ul id="zh-cn_topic_0201534286_ul729412507220"><li>PER：独享带宽</li><li>WHOLE：共享带宽</li></ul>
+    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534286_ul2255712095"></a><a name="zh-cn_topic_0201534286_ul2255712095"></a><ul id="zh-cn_topic_0201534286_ul2255712095"><li>功能说明：<span id="zh-cn_topic_0201534286_text111001423131619"><a name="zh-cn_topic_0201534286_text111001423131619"></a><a name="zh-cn_topic_0201534286_text111001423131619"></a></span><span id="zh-cn_topic_0201534286_text310011232164"><a name="zh-cn_topic_0201534286_text310011232164"></a><a name="zh-cn_topic_0201534286_text310011232164"></a>弹性公网IP</span>的带宽类型</li><li>取值范围：PER，WHOLE。<a name="zh-cn_topic_0201534286_ul729412507220"></a><a name="zh-cn_topic_0201534286_ul729412507220"></a><ul id="zh-cn_topic_0201534286_ul729412507220"><li>PER：独享带宽</li><li>WHOLE：共享带宽</li></ul>
     </li></ul>
     <a name="zh-cn_topic_0201534286_ul1369035014203"></a><a name="zh-cn_topic_0201534286_ul1369035014203"></a><ul id="zh-cn_topic_0201534286_ul1369035014203"><li>约束：其中IPv6暂不支持WHOLE类型带宽。</li></ul>
     </td>

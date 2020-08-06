@@ -32,7 +32,7 @@ DELETE /v1/\{project\_id\}/publicips/\{publicip\_id\}
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534180_p54932709"><a name="zh-cn_topic_0201534180_p54932709"></a><a name="zh-cn_topic_0201534180_p54932709"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534180_p20364417"><a name="zh-cn_topic_0201534180_p20364417"></a><a name="zh-cn_topic_0201534180_p20364417"></a>弹性公网IP唯一标识</p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534180_p20364417"><a name="zh-cn_topic_0201534180_p20364417"></a><a name="zh-cn_topic_0201534180_p20364417"></a><span id="zh-cn_topic_0201534180_text106083413176"><a name="zh-cn_topic_0201534180_text106083413176"></a><a name="zh-cn_topic_0201534180_text106083413176"></a></span><span id="zh-cn_topic_0201534180_text16081412170"><a name="zh-cn_topic_0201534180_text16081412170"></a><a name="zh-cn_topic_0201534180_text16081412170"></a>弹性公网IP</span>唯一标识</p>
 </td>
 </tr>
 </tbody>

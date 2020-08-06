@@ -19,7 +19,7 @@
 </thead>
 <tbody><tr id="row14362205884514"><td class="cellrowborder" valign="top" width="20.810000000000002%" headers="mcps1.2.3.1.1 "><p id="p1947611525917"><a name="p1947611525917"></a><a name="p1947611525917"></a><a href="https://support.huaweicloud.com/api-eip/eip_api_0000.html" target="_blank" rel="noopener noreferrer">弹性公网IP</a></p>
 </td>
-<td class="cellrowborder" valign="top" width="79.19%" headers="mcps1.2.3.1.2 "><p id="p9476152399"><a name="p9476152399"></a><a name="p9476152399"></a>弹性公网IP的申请、查询、更新、删除等接口。</p>
+<td class="cellrowborder" valign="top" width="79.19%" headers="mcps1.2.3.1.2 "><p id="p9476152399"><a name="p9476152399"></a><a name="p9476152399"></a><span id="text191714367203"><a name="text191714367203"></a><a name="text191714367203"></a></span><span id="text3181536172014"><a name="text3181536172014"></a><a name="text3181536172014"></a>弹性公网IP</span>的申请、查询、更新、删除等接口。</p>
 </td>
 </tr>
 <tr id="row103631858124512"><td class="cellrowborder" valign="top" width="20.810000000000002%" headers="mcps1.2.3.1.1 "><p id="p1447619521696"><a name="p1447619521696"></a><a name="p1447619521696"></a><a href="https://support.huaweicloud.com/api-eip/eip_apiBandwidth_0000.html" target="_blank" rel="noopener noreferrer">带宽</a></p>
@@ -39,7 +39,7 @@
 </tr>
 <tr id="row1736416582452"><td class="cellrowborder" valign="top" width="20.810000000000002%" headers="mcps1.2.3.1.1 "><p id="p11476752195"><a name="p11476752195"></a><a name="p11476752195"></a><a href="https://support.huaweicloud.com/api-eip/eip_apitag_0000.html" target="_blank" rel="noopener noreferrer">弹性IP资源标签管理</a></p>
 </td>
-<td class="cellrowborder" valign="top" width="79.19%" headers="mcps1.2.3.1.2 "><p id="p54769521599"><a name="p54769521599"></a><a name="p54769521599"></a>弹性公网IP标签的创建、查询、删除等接口。</p>
+<td class="cellrowborder" valign="top" width="79.19%" headers="mcps1.2.3.1.2 "><p id="p54769521599"><a name="p54769521599"></a><a name="p54769521599"></a><span id="text19675113832010"><a name="text19675113832010"></a><a name="text19675113832010"></a></span><span id="text186761938202018"><a name="text186761938202018"></a><a name="text186761938202018"></a>弹性公网IP</span>标签的创建、查询、删除等接口。</p>
 <p id="p147735213915"><a name="p147735213915"></a><a name="p147735213915"></a>该类型接口目前仅在“华北-北京四”、“华东-上海一”、“华东-上海二”、“西南-贵阳一”区域开放。</p>
 </td>
 </tr>
