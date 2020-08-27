@@ -114,15 +114,6 @@ POST /v2.0/\{project\_id\}/bandwidths/\{bandwidth\_id\}/insert
     <td class="cellrowborder" valign="top" width="49.72%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534131_p476380"><a name="zh-cn_topic_0201534131_p476380"></a><a name="zh-cn_topic_0201534131_p476380"></a>带宽对应的<span id="zh-cn_topic_0201534131_text164255151912"><a name="zh-cn_topic_0201534131_text164255151912"></a><a name="zh-cn_topic_0201534131_text164255151912"></a></span><span id="zh-cn_topic_0201534131_text134257151798"><a name="zh-cn_topic_0201534131_text134257151798"></a><a name="zh-cn_topic_0201534131_text134257151798"></a>弹性公网IP</span>的唯一标识</p>
     </td>
     </tr>
-    <tr id="zh-cn_topic_0201534131_row141661853134316"><td class="cellrowborder" valign="top" width="14.29%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534131_p652012122440"><a name="zh-cn_topic_0201534131_p652012122440"></a><a name="zh-cn_topic_0201534131_p652012122440"></a>publicip_type</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="17.03%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534131_p59711465016"><a name="zh-cn_topic_0201534131_p59711465016"></a><a name="zh-cn_topic_0201534131_p59711465016"></a>否</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="18.96%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534131_p727719492445"><a name="zh-cn_topic_0201534131_p727719492445"></a><a name="zh-cn_topic_0201534131_p727719492445"></a>String</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="49.72%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534131_p1752019125446"><a name="zh-cn_topic_0201534131_p1752019125446"></a><a name="zh-cn_topic_0201534131_p1752019125446"></a>若publicip_id为<span id="zh-cn_topic_0201534131_text763610186910"><a name="zh-cn_topic_0201534131_text763610186910"></a><a name="zh-cn_topic_0201534131_text763610186910"></a></span><span id="zh-cn_topic_0201534131_text0636161817913"><a name="zh-cn_topic_0201534131_text0636161817913"></a><a name="zh-cn_topic_0201534131_text0636161817913"></a>弹性公网IP</span>的id，则该字段会自动忽略。若publicip_id为IPv6端口的id，则该字段必填5_dualStack。</p>
-    </td>
-    </tr>
     <tr id="zh-cn_topic_0201534131_row144151444141"><td class="cellrowborder" valign="top" width="14.29%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534131_p490210492147"><a name="zh-cn_topic_0201534131_p490210492147"></a><a name="zh-cn_topic_0201534131_p490210492147"></a>publicip_type</p>
     </td>
     <td class="cellrowborder" valign="top" width="17.03%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534131_p4902154913141"><a name="zh-cn_topic_0201534131_p4902154913141"></a><a name="zh-cn_topic_0201534131_p4902154913141"></a>否</p>
@@ -275,27 +266,6 @@ POST /v2.0/\{project\_id\}/bandwidths/\{bandwidth\_id\}/insert
     </li></ul>
     </td>
     </tr>
-    <tr id="zh-cn_topic_0201534131_row6575104125619"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534131_p15171420141118"><a name="zh-cn_topic_0201534131_p15171420141118"></a><a name="zh-cn_topic_0201534131_p15171420141118"></a>enable_bandwidth_rules</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534131_p151792013114"><a name="zh-cn_topic_0201534131_p151792013114"></a><a name="zh-cn_topic_0201534131_p151792013114"></a>boolean</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="51%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534131_ul05131953191317"></a><a name="zh-cn_topic_0201534131_ul05131953191317"></a><ul id="zh-cn_topic_0201534131_ul05131953191317"><li>功能说明：是否开启企业级QoS</li><li>取值范围：true/false</li></ul>
-    </td>
-    </tr>
-    <tr id="zh-cn_topic_0201534131_row282419297565"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534131_p9517112071110"><a name="zh-cn_topic_0201534131_p9517112071110"></a><a name="zh-cn_topic_0201534131_p9517112071110"></a>rule_quota</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534131_p3517142051110"><a name="zh-cn_topic_0201534131_p3517142051110"></a><a name="zh-cn_topic_0201534131_p3517142051110"></a>integer</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="51%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534131_p69814395542"><a name="zh-cn_topic_0201534131_p69814395542"></a><a name="zh-cn_topic_0201534131_p69814395542"></a>功能说明：带宽支持的最大分组规则数</p>
-    </td>
-    </tr>
-    <tr id="zh-cn_topic_0201534131_row74219262566"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534131_p35174205114"><a name="zh-cn_topic_0201534131_p35174205114"></a><a name="zh-cn_topic_0201534131_p35174205114"></a>bandwidth_rules</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534131_p135179203115"><a name="zh-cn_topic_0201534131_p135179203115"></a><a name="zh-cn_topic_0201534131_p135179203115"></a>Array of <a href="#zh-cn_topic_0201534131_table10577181319193">bandwidth_rules</a> objects</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="51%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534131_p8998727135517"><a name="zh-cn_topic_0201534131_p8998727135517"></a><a name="zh-cn_topic_0201534131_p8998727135517"></a>功能说明：带宽规则对象</p>
-    </td>
-    </tr>
     </tbody>
     </table>
 
@@ -345,62 +315,6 @@ POST /v2.0/\{project\_id\}/bandwidths/\{bandwidth\_id\}/insert
     </td>
     <td class="cellrowborder" valign="top" width="57.69%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534131_ul13831731151713"></a><a name="zh-cn_topic_0201534131_ul13831731151713"></a><ul id="zh-cn_topic_0201534131_ul13831731151713"><li>功能说明：<span id="zh-cn_topic_0201534131_text1658195610102"><a name="zh-cn_topic_0201534131_text1658195610102"></a><a name="zh-cn_topic_0201534131_text1658195610102"></a></span><span id="zh-cn_topic_0201534131_text1358135661016"><a name="zh-cn_topic_0201534131_text1358135661016"></a><a name="zh-cn_topic_0201534131_text1358135661016"></a>弹性公网IP</span>的类型</li><li>取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP）<a name="zh-cn_topic_0201534131_ul161028178419"></a><a name="zh-cn_topic_0201534131_ul161028178419"></a><ul id="zh-cn_topic_0201534131_ul161028178419"><li>东北-大连：5_telcom、5_union</li><li>华南-广州：5_bgp、5_sbgp</li><li>华东-上海一：5_bgp、5_sbgp</li><li>华东-上海二：5_bgp、5_sbgp</li><li>华北-北京一：5_bgp、5_sbgp</li><li>亚太-香港：5_bgp</li><li>亚太-曼谷：5_bgp</li><li>亚太-新加坡：5_bgp</li><li>非洲-约翰内斯堡：5_bgp</li><li>西南-贵阳一：5_sbgp</li><li>华北-北京四：5_bgp、5_sbgp</li><li>拉美-圣地亚哥：5_bgp</li><li>拉美-圣保罗一：5_bgp</li><li>拉美-墨西哥城一：5_bgp</li><li>拉美-布宜诺斯艾利一：5_bgp</li><li>拉美-利马一：5_bgp</li><li>拉美-圣地亚哥二：5_bgp</li></ul>
     </li><li>约束：必须是系统具体支持的类型</li></ul>
-    </td>
-    </tr>
-    </tbody>
-    </table>
-
-    **表 8**  bandwidth\_rules对象
-
-    <a name="zh-cn_topic_0201534131_table10577181319193"></a>
-    <table><thead align="left"><tr id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_row11727151341913"><th class="cellrowborder" valign="top" width="28.577142285771423%" id="mcps1.2.4.1.1"><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p272712132193"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p272712132193"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p272712132193"></a>字段名称</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="16.688331166883312%" id="mcps1.2.4.1.2"><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p272771319196"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p272771319196"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p272771319196"></a>类型</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="54.73452654734526%" id="mcps1.2.4.1.3"><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p1727713111920"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p1727713111920"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p1727713111920"></a>描述</p>
-    </th>
-    </tr>
-    </thead>
-    <tbody><tr id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_row672820133196"><td class="cellrowborder" valign="top" width="28.577142285771423%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p972851341915"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p972851341915"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p972851341915"></a>id</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="16.688331166883312%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p1728191351919"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p1728191351919"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p1728191351919"></a>string</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="54.73452654734526%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p872817131197"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p872817131197"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p872817131197"></a>带宽规则ID</p>
-    </td>
-    </tr>
-    <tr id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_row172891313199"><td class="cellrowborder" valign="top" width="28.577142285771423%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p10728313121911"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p10728313121911"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p10728313121911"></a>name</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="16.688331166883312%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p18728713131916"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p18728713131916"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p18728713131916"></a>string</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="54.73452654734526%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p972841312199"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p972841312199"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p972841312199"></a>带宽规则名称</p>
-    </td>
-    </tr>
-    <tr id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_row1072871319197"><td class="cellrowborder" valign="top" width="28.577142285771423%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p1372851371914"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p1372851371914"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p1372851371914"></a>admin_state_up</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="16.688331166883312%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p1872812131192"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p1872812131192"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p1872812131192"></a>boolean</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="54.73452654734526%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p872851311194"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p872851311194"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p872851311194"></a>配置状态，为False时配置不生效</p>
-    </td>
-    </tr>
-    <tr id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_row4728813171920"><td class="cellrowborder" valign="top" width="28.577142285771423%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p972814135194"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p972814135194"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p972814135194"></a>egress_size</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="16.688331166883312%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p197281013191910"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p197281013191910"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p197281013191910"></a>integer</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="54.73452654734526%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_ul3928164011281"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_ul3928164011281"></a><ul id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_ul3928164011281"><li>功能说明：出网带宽最大值，单位Mbps</li><li>取值范围[0,n]，其中n为所属带宽的带宽大小（size字段）。0表示设置为最大带宽</li></ul>
-    </td>
-    </tr>
-    <tr id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_row57281313171911"><td class="cellrowborder" valign="top" width="28.577142285771423%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p19728161317197"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p19728161317197"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p19728161317197"></a>egress_guarented_size</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="16.688331166883312%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p197281136199"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p197281136199"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p197281136199"></a>integer</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="54.73452654734526%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_ul128371442281"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_ul128371442281"></a><ul id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_ul128371442281"><li>功能说明：出网保障带宽大小，单位Mbps</li><li>取值范围[0,x]，其中x为所属带宽剩余的保障额</li></ul>
-    </td>
-    </tr>
-    <tr id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_row272816136193"><td class="cellrowborder" valign="top" width="28.577142285771423%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p117291913121914"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p117291913121914"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p117291913121914"></a>publicip_info</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="16.688331166883312%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p1772913131193"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p1772913131193"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_p1772913131193"></a>array</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="54.73452654734526%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_ul4848693277"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534167_ul4848693277"></a><ul id="zh-cn_topic_0201534131_zh-cn_topic_0201534167_ul4848693277"><li>功能说明：带宽对应的弹性公网IP信息</li><li>约束：WHOLE类型的带宽支持多个弹性公网IP，PER类型的带宽只能对应一个弹性公网IP</li></ul>
     </td>
     </tr>
     </tbody>

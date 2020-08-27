@@ -136,6 +136,15 @@ POST /v2.0/\{project\_id\}/bandwidths/\{bandwidth\_id\}/remove
     <td class="cellrowborder" valign="top" width="49.72%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534216_p476380"><a name="zh-cn_topic_0201534216_p476380"></a><a name="zh-cn_topic_0201534216_p476380"></a>带宽对应的<span id="zh-cn_topic_0201534216_text4370119121210"><a name="zh-cn_topic_0201534216_text4370119121210"></a><a name="zh-cn_topic_0201534216_text4370119121210"></a></span><span id="zh-cn_topic_0201534216_text1537041961214"><a name="zh-cn_topic_0201534216_text1537041961214"></a><a name="zh-cn_topic_0201534216_text1537041961214"></a>弹性公网IP</span>的唯一标识</p>
     </td>
     </tr>
+    <tr id="zh-cn_topic_0201534216_row472114161816"><td class="cellrowborder" valign="top" width="13.3%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534216_p652012122440"><a name="zh-cn_topic_0201534216_p652012122440"></a><a name="zh-cn_topic_0201534216_p652012122440"></a>publicip_type</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.02%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534216_p10708142510820"><a name="zh-cn_topic_0201534216_p10708142510820"></a><a name="zh-cn_topic_0201534216_p10708142510820"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.96%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534216_p727719492445"><a name="zh-cn_topic_0201534216_p727719492445"></a><a name="zh-cn_topic_0201534216_p727719492445"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="49.72%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534216_p1752019125446"><a name="zh-cn_topic_0201534216_p1752019125446"></a><a name="zh-cn_topic_0201534216_p1752019125446"></a>若publicip_id为<span id="zh-cn_topic_0201534216_text7427152210128"><a name="zh-cn_topic_0201534216_text7427152210128"></a><a name="zh-cn_topic_0201534216_text7427152210128"></a></span><span id="zh-cn_topic_0201534216_text542716229123"><a name="zh-cn_topic_0201534216_text542716229123"></a><a name="zh-cn_topic_0201534216_text542716229123"></a>弹性公网IP</span>的id，则该字段会自动忽略。若publicip_id为IPv6端口的id，则该字段必填5_dualStack（目前仅华北-北京四支持）。</p>
+    </td>
+    </tr>
     </tbody>
     </table>
 

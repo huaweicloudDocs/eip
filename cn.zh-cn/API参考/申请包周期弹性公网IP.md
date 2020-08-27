@@ -235,7 +235,7 @@ POST /v2.0/\{project\_id\}/publicips
     </td>
     <td class="cellrowborder" valign="top" width="13.252525252525254%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534185_p1166112125711"><a name="zh-cn_topic_0201534185_p1166112125711"></a><a name="zh-cn_topic_0201534185_p1166112125711"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="21.090909090909093%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534185_p966110165717"><a name="zh-cn_topic_0201534185_p966110165717"></a><a name="zh-cn_topic_0201534185_p966110165717"></a>String</p>
+    <td class="cellrowborder" valign="top" width="21.090909090909093%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534185_p1639532315618"><a name="zh-cn_topic_0201534185_p1639532315618"></a><a name="zh-cn_topic_0201534185_p1639532315618"></a>boolean</p>
     </td>
     <td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><a name="zh-cn_topic_0201534185_ul1059612233404"></a><a name="zh-cn_topic_0201534185_ul1059612233404"></a><ul id="zh-cn_topic_0201534185_ul1059612233404"><li>功能说明：是否自动续订</li><li>取值范围：<p id="zh-cn_topic_0201534185_p437113598116"><a name="zh-cn_topic_0201534185_p437113598116"></a><a name="zh-cn_topic_0201534185_p437113598116"></a>false：不自动续订；true：自动续订；默认值：false</p>
     </li><li>约束：<p id="zh-cn_topic_0201534185_p797817497111"><a name="zh-cn_topic_0201534185_p797817497111"></a><a name="zh-cn_topic_0201534185_p797817497111"></a>到期后，默认自动续订1个月（自动续订时间后续可能会变化），详情可联系客服咨询。</p>
@@ -246,7 +246,7 @@ POST /v2.0/\{project\_id\}/publicips
     </td>
     <td class="cellrowborder" valign="top" width="13.252525252525254%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534185_p7661215578"><a name="zh-cn_topic_0201534185_p7661215578"></a><a name="zh-cn_topic_0201534185_p7661215578"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="21.090909090909093%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534185_p266218155720"><a name="zh-cn_topic_0201534185_p266218155720"></a><a name="zh-cn_topic_0201534185_p266218155720"></a>String</p>
+    <td class="cellrowborder" valign="top" width="21.090909090909093%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534185_p149301145165"><a name="zh-cn_topic_0201534185_p149301145165"></a><a name="zh-cn_topic_0201534185_p149301145165"></a>boolean</p>
     </td>
     <td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><a name="zh-cn_topic_0201534185_ul781495117401"></a><a name="zh-cn_topic_0201534185_ul781495117401"></a><ul id="zh-cn_topic_0201534185_ul781495117401"><li>功能说明：下单订购后，是否自动从客户的账户中支付；默认是“不自动支付”</li><li>取值范围：<a name="zh-cn_topic_0201534185_ul1754865674019"></a><a name="zh-cn_topic_0201534185_ul1754865674019"></a><ul id="zh-cn_topic_0201534185_ul1754865674019"><li>true：是（自动支付，从账户余额自动扣费）</li><li>false：否（默认值，只提交订单不支付，需要客户手动去支付）</li></ul>
     </li><li>约束：<p id="zh-cn_topic_0201534185_p483505155946"><a name="zh-cn_topic_0201534185_p483505155946"></a><a name="zh-cn_topic_0201534185_p483505155946"></a>自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。</p>
@@ -334,6 +334,13 @@ POST /v2.0/\{project\_id\}/publicips
     <a name="zh-cn_topic_0201534185_ul530215481987"></a><a name="zh-cn_topic_0201534185_ul530215481987"></a><ul id="zh-cn_topic_0201534185_ul530215481987"><li>如果需要查询订单的资源开通详情，请参考“<a href="https://support.huaweicloud.com/api-oce/api_order_00001.html" target="_blank" rel="noopener noreferrer">查询订单的资源开通详情</a>”。</li><li>如果需要退订该包周期资源，请参考“<a href="https://support.huaweicloud.com/api-oce/zh-cn_topic_0082522030.html" target="_blank" rel="noopener noreferrer">退订包周期资源</a>”。</li></ul>
     <p id="zh-cn_topic_0201534185_p925914325818"><a name="zh-cn_topic_0201534185_p925914325818"></a><a name="zh-cn_topic_0201534185_p925914325818"></a></p>
     </div></div>
+    </td>
+    </tr>
+    <tr id="zh-cn_topic_0201534185_row341910754414"><td class="cellrowborder" valign="top" width="18.08%" headers="mcps1.1.4.1.1 "><p id="zh-cn_topic_0201534185_p05181714414"><a name="zh-cn_topic_0201534185_p05181714414"></a><a name="zh-cn_topic_0201534185_p05181714414"></a>publicip_id</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="25.3%" headers="mcps1.1.4.1.2 "><p id="zh-cn_topic_0201534185_p175181794417"><a name="zh-cn_topic_0201534185_p175181794417"></a><a name="zh-cn_topic_0201534185_p175181794417"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="56.620000000000005%" headers="mcps1.1.4.1.3 "><p id="zh-cn_topic_0201534185_p25191774418"><a name="zh-cn_topic_0201534185_p25191774418"></a><a name="zh-cn_topic_0201534185_p25191774418"></a><span id="zh-cn_topic_0201534185_text4744144201910"><a name="zh-cn_topic_0201534185_text4744144201910"></a><a name="zh-cn_topic_0201534185_text4744144201910"></a></span><span id="zh-cn_topic_0201534185_text9744164191915"><a name="zh-cn_topic_0201534185_text9744164191915"></a><a name="zh-cn_topic_0201534185_text9744164191915"></a>弹性公网IP</span>的ID（预付费场景返回该字段）</p>
     </td>
     </tr>
     </tbody>
@@ -434,7 +441,8 @@ POST /v2.0/\{project\_id\}/publicips
 
     ```
     {
-        "order_id": "CS1802081410IMDRN"
+        "order_id": "CS1802081410IMDRN",
+        "publicip_id": "4eaf3b63-48ca-4410-ab85-bdfddf4b35fd"
     }
     ```
 
