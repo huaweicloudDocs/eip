@@ -6,6 +6,10 @@
 
 创建浮动IP时的外部网络UUID，请使用GET /v2.0/networks?router:external=True或neutron net-external-list方式获取。
 
+## 调试<a name="zh-cn_topic_0201534249_section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=EIP&version=v2&api=NeutronCreateFloatingIp)中直接运行调试该接口。
+
 ## URI<a name="zh-cn_topic_0201534249_section5936537521549"></a>
 
 POST /v2.0/floatingips
@@ -27,7 +31,7 @@ POST /v2.0/floatingips
 </thead>
 <tbody><tr id="zh-cn_topic_0201534249_row178260421549"><td class="cellrowborder" valign="top" width="19.59%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534249_p1017324521549"><a name="zh-cn_topic_0201534249_p1017324521549"></a><a name="zh-cn_topic_0201534249_p1017324521549"></a>floatingip</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.53%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534249_p1872651821549"><a name="zh-cn_topic_0201534249_p1872651821549"></a><a name="zh-cn_topic_0201534249_p1872651821549"></a>Object</p>
+<td class="cellrowborder" valign="top" width="17.53%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534249_p1872651821549"><a name="zh-cn_topic_0201534249_p1872651821549"></a><a name="zh-cn_topic_0201534249_p1872651821549"></a><a href="#zh-cn_topic_0201534249_table15863423175513">floatingip</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="8.25%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534249_p4045302421549"><a name="zh-cn_topic_0201534249_p4045302421549"></a><a name="zh-cn_topic_0201534249_p4045302421549"></a>是</p>
 </td>
@@ -108,7 +112,7 @@ POST /v2.0/floatingips
 </thead>
 <tbody><tr id="zh-cn_topic_0201534249_row4751605321549"><td class="cellrowborder" valign="top" width="21.349999999999998%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534249_p2359506021549"><a name="zh-cn_topic_0201534249_p2359506021549"></a><a name="zh-cn_topic_0201534249_p2359506021549"></a>floatingip</p>
 </td>
-<td class="cellrowborder" valign="top" width="19.11%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534249_p3215169621549"><a name="zh-cn_topic_0201534249_p3215169621549"></a><a name="zh-cn_topic_0201534249_p3215169621549"></a>Object</p>
+<td class="cellrowborder" valign="top" width="19.11%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534249_p3215169621549"><a name="zh-cn_topic_0201534249_p3215169621549"></a><a name="zh-cn_topic_0201534249_p3215169621549"></a><a href="#zh-cn_topic_0201534249_table8139247714">floatingip</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="59.540000000000006%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534249_p2411791621549"><a name="zh-cn_topic_0201534249_p2411791621549"></a><a name="zh-cn_topic_0201534249_p2411791621549"></a>floatingip对象列表，参见<a href="#zh-cn_topic_0201534249_table8139247714">表4</a>。</p>
 </td>

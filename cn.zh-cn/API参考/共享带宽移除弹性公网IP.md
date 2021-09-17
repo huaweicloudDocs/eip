@@ -4,6 +4,10 @@
 
 共享带宽移除弹性公网IP。
 
+## 调试<a name="zh-cn_topic_0201534216_section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=EIP&version=v2&api=RemovePublicipsFromSharedBandwidth)中直接运行调试该接口。
+
 ## URI<a name="zh-cn_topic_0201534216_section15012662"></a>
 
 POST /v2.0/\{project\_id\}/bandwidths/\{bandwidth\_id\}/remove
@@ -59,7 +63,7 @@ POST /v2.0/\{project\_id\}/bandwidths/\{bandwidth\_id\}/remove
     </td>
     <td class="cellrowborder" valign="top" width="15.98%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534216_p2376550915556"><a name="zh-cn_topic_0201534216_p2376550915556"></a><a name="zh-cn_topic_0201534216_p2376550915556"></a>是</p>
     </td>
-    <td class="cellrowborder" valign="top" width="21.43%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534216_p4595806815556"><a name="zh-cn_topic_0201534216_p4595806815556"></a><a name="zh-cn_topic_0201534216_p4595806815556"></a>Object</p>
+    <td class="cellrowborder" valign="top" width="21.43%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534216_p4595806815556"><a name="zh-cn_topic_0201534216_p4595806815556"></a><a name="zh-cn_topic_0201534216_p4595806815556"></a><a href="#zh-cn_topic_0201534216_table31854691">bandwidth</a> object</p>
     </td>
     <td class="cellrowborder" valign="top" width="47.18%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534216_p1610901815556"><a name="zh-cn_topic_0201534216_p1610901815556"></a><a name="zh-cn_topic_0201534216_p1610901815556"></a>带宽对象，请参见<a href="#zh-cn_topic_0201534216_table31854691">表3</a>。</p>
     </td>

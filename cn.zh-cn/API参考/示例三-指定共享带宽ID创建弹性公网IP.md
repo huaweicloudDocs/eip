@@ -1,4 +1,4 @@
-# 示例一：指定共享带宽ID创建弹性公网IP<a name="eip_apieg_0001"></a>
+# 示例三：指定共享带宽ID创建弹性公网IP<a name="eip_apieg_0001"></a>
 
 ## 操作场景<a name="section142267511571"></a>
 
@@ -24,8 +24,7 @@
         { 
              "bandwidth": { 
                  "name": "bandwidth123", 
-                 "size": 10, 
-                 "enterprise_project_id":"b261ac1f-2489-4bc7-b31b-c33c3346a439" 
+                 "size": 10
              } 
          }
         ```
@@ -63,10 +62,10 @@
             ```
             { 
                  "bandwidth": { 
-                     "id": "a97a827c-3636-4eda-82ce-7aaeeaacd2af", 
-                     "name": "bandwidth-fd7fE3", 
-                     "size": 6, 
-                     "share_type": "PER", 
+                     "id": "1bffc5f2-ff19-45a6-96d2-dfdca49cc387", 
+                     "name": "bandwidth123", 
+                     "size": 10, 
+                     "share_type": "WHOLE", 
                      "publicip_info": [ 
                          { 
                              "publicip_id": "ff156c26-bcc9-4541-a75c-42baf8b9748f", 
@@ -101,9 +100,9 @@
           },    
              "bandwidth": {        
                  "name": "bandwidth123",        
-                 "size": 5,         
+                 "size": 10,         
                  "share_type": "WHOLE", 
-                 "id":"ebfa375c-3f93-465e-81a3-bd66e578ee9d" 
+                 "id":"1bffc5f2-ff19-45a6-96d2-dfdca49cc387" 
              },          
              "enterprise_project_id":"0"   
          }
@@ -144,10 +143,10 @@
                     "status": "DOWN",
                     "tenant_id": "060576782980d5762f9ec014dd2f1148",
                     "create_time": "2020-08-13 12:55:27",
-                    "bandwidth_id": "1f570558-46cc-4f78-8a70-db108a617494",
-                    "bandwidth_name": "bandwidth-zzzzzz",
+                    "bandwidth_id": "1bffc5f2-ff19-45a6-96d2-dfdca49cc387",
+                    "bandwidth_name": "bandwidth123",
                     "bandwidth_share_type": "WHOLE",
-                    "bandwidth_size": 6,
+                    "bandwidth_size": 10,
                     "profile": {},
                     "enterprise_project_id": "a380829c-db6f-4db3-b5b6-cc377f7a3ff8",
                     "ip_version": 4

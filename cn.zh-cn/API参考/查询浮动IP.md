@@ -4,6 +4,10 @@
 
 该接口用于查询指定浮动IP详情，包括浮动IP状态，浮动IP所属路由器ID，浮动IP的外部网络ID等等。
 
+## 调试<a name="zh-cn_topic_0201534072_section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=EIP&version=v2&api=NeutronShowFloatingIp)中直接运行调试该接口。
+
 ## URI<a name="zh-cn_topic_0201534072_section269019862159"></a>
 
 GET /v2.0/floatingips/\{floatingip\_id\}
@@ -27,7 +31,7 @@ GET /v2.0/floatingips/\{floatingip\_id\}
 </thead>
 <tbody><tr id="zh-cn_topic_0201534072_row525977702159"><td class="cellrowborder" valign="top" width="21.349999999999998%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534072_p325609822159"><a name="zh-cn_topic_0201534072_p325609822159"></a><a name="zh-cn_topic_0201534072_p325609822159"></a>floatingip</p>
 </td>
-<td class="cellrowborder" valign="top" width="8.99%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534072_p201938822159"><a name="zh-cn_topic_0201534072_p201938822159"></a><a name="zh-cn_topic_0201534072_p201938822159"></a>Object</p>
+<td class="cellrowborder" valign="top" width="8.99%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534072_p201938822159"><a name="zh-cn_topic_0201534072_p201938822159"></a><a name="zh-cn_topic_0201534072_p201938822159"></a><a href="#zh-cn_topic_0201534072_table8139247714">floatingip</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="69.66%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534072_p191679172159"><a name="zh-cn_topic_0201534072_p191679172159"></a><a name="zh-cn_topic_0201534072_p191679172159"></a>floatingip对象列表，参见<a href="#zh-cn_topic_0201534072_table8139247714">表2</a>。</p>
 </td>

@@ -6,6 +6,10 @@
 
 查询指定的浮动IP的详细信息，可利用[查询浮动IP](查询浮动IP.md#eip_openstackapi_0007)接口进行查询。
 
+## 调试<a name="zh-cn_topic_0201534068_section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=EIP&version=v2&api=NeutronListFloatingIps)中直接运行调试该接口。
+
 ## URI<a name="zh-cn_topic_0201534068_section548377002148"></a>
 
 GET /v2.0/floatingips
@@ -93,11 +97,12 @@ GET /v2.0/floatingips
 </tr>
 <tr id="zh-cn_topic_0201534068_row15163151102"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534068_p19997422102"><a name="zh-cn_topic_0201534068_p19997422102"></a><a name="zh-cn_topic_0201534068_p19997422102"></a>limit</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.809999999999999%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p11100114281018"><a name="zh-cn_topic_0201534068_p11100114281018"></a><a name="zh-cn_topic_0201534068_p11100114281018"></a>String</p>
+<td class="cellrowborder" valign="top" width="15.809999999999999%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534068_p11100114281018"><a name="zh-cn_topic_0201534068_p11100114281018"></a><a name="zh-cn_topic_0201534068_p11100114281018"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="16.63%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p1610054213103"><a name="zh-cn_topic_0201534068_p1610054213103"></a><a name="zh-cn_topic_0201534068_p1610054213103"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="42.559999999999995%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p5100134217101"><a name="zh-cn_topic_0201534068_p5100134217101"></a><a name="zh-cn_topic_0201534068_p5100134217101"></a>每页显示的条目数量。</p>
+<td class="cellrowborder" valign="top" width="42.559999999999995%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p2017153116589"><a name="zh-cn_topic_0201534068_p2017153116589"></a><a name="zh-cn_topic_0201534068_p2017153116589"></a>分页查询每页返回的记录个数，取值范围为0~intmax。</p>
+<p id="zh-cn_topic_0201534068_p125192338584"><a name="zh-cn_topic_0201534068_p125192338584"></a><a name="zh-cn_topic_0201534068_p125192338584"></a>limit需要和marker配合使用，详细规则请见marker的参数说明。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0201534068_row8578219101016"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534068_p17100142191012"><a name="zh-cn_topic_0201534068_p17100142191012"></a><a name="zh-cn_topic_0201534068_p17100142191012"></a>marker</p>
@@ -106,7 +111,9 @@ GET /v2.0/floatingips
 </td>
 <td class="cellrowborder" valign="top" width="16.63%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534068_p8100442111010"><a name="zh-cn_topic_0201534068_p8100442111010"></a><a name="zh-cn_topic_0201534068_p8100442111010"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="42.559999999999995%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p18100164214106"><a name="zh-cn_topic_0201534068_p18100164214106"></a><a name="zh-cn_topic_0201534068_p18100164214106"></a>取值为上一页数据的最后一条记录的id，当marker参数为无效id时，response将响应错误码400。</p>
+<td class="cellrowborder" valign="top" width="42.559999999999995%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534068_p28526205175853"><a name="zh-cn_topic_0201534068_p28526205175853"></a><a name="zh-cn_topic_0201534068_p28526205175853"></a>分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。</p>
+<p id="zh-cn_topic_0201534068_p538818488578"><a name="zh-cn_topic_0201534068_p538818488578"></a><a name="zh-cn_topic_0201534068_p538818488578"></a>marker需要和limit配合使用：</p>
+<a name="zh-cn_topic_0201534068_ul12704811125810"></a><a name="zh-cn_topic_0201534068_ul12704811125810"></a><ul id="zh-cn_topic_0201534068_ul12704811125810"><li>若不传入marker和limit参数，查询结果返回全部资源记录。</li><li>若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。</li><li>若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。</li><li>若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的所有资源记录。</li></ul>
 </td>
 </tr>
 <tr id="zh-cn_topic_0201534068_row5971723121020"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534068_p210013424100"><a name="zh-cn_topic_0201534068_p210013424100"></a><a name="zh-cn_topic_0201534068_p210013424100"></a>page_reverse</p>
@@ -341,6 +348,8 @@ GET https://{Endpoint}/v2.0/floatingips?limit=1
     ]
 }
 ```
+
+## 状态码<a name="zh-cn_topic_0201534068_section10470352390"></a>
 
 请参见[状态码](状态码.md#eip_api05_0001)。
 

@@ -1,4 +1,4 @@
-# 示例二：弹性公网IP绑定弹性云服务器<a name="eip_apieg_0002"></a>
+# 示例一：弹性公网IP绑定弹性云服务器<a name="eip_apieg_0002"></a>
 
 ## 操作场景<a name="section7138121042816"></a>
 
@@ -99,7 +99,7 @@
 
         -   请求异常时，错误码请参见[7.2 错误码](错误码.md)。
 
-3.  弹性公网ip绑定云服务器网卡。
+3.  弹性公网IP绑定云服务器网卡。
     1.  发送“PUT /v1/\{project\_id\}/publicips/\{publicip\_id\}”，project\_id为项目ID。
     2.  在Request Header中增加“X-Auth-Token”。
     3.  在Request Body中传入参数如下：
@@ -107,7 +107,7 @@
         ```
         {     
              "publicip": {         
-                 "port_id": "f588ccfa-8750-4d7c-bf5d-2ede24414706"      
+                 "port_id": "02c72193-efec-42fb-853b-c33f2b802467"      
              }
          }
         ```
@@ -118,10 +118,10 @@
             ```
             { 
                "publicip": { 
-                 "id": "f6318bef-6508-4ea5-a48f-6152b6b1a8fb", 
+                 "id": "f588ccfa-8750-4d7c-bf5d-2ede24414706", 
                  "status": "ACTIVE", 
                  "type": "5_bgp", 
-                 "port_id": "a135e9b8-1630-40d2-a6c5-eb534a61efbe", 
+                 "port_id": "02c72193-efec-42fb-853b-c33f2b802467", 
                  "public_ip_address": "10.xx.xx.162", 
                  "private_ip_address": "192.168.1.131", 
                  "tenant_id": "26ae5181a416420998eb2093aaed84d9", 

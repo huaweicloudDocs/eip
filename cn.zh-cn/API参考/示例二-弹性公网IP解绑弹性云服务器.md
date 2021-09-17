@@ -1,4 +1,4 @@
-# 示例三：弹性公网IP解绑弹性云服务器<a name="eip_apieg_0003"></a>
+# 示例二：弹性公网IP解绑弹性云服务器<a name="eip_apieg_0003"></a>
 
 ## 操作场景<a name="section679692012810"></a>
 

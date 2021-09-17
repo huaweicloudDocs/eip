@@ -59,7 +59,7 @@ POST /v2.0/\{project\_id\}/publicips/\{publicip\_id\}/tags
     </thead>
     <tbody><tr id="zh-cn_topic_0201534118_row11974194022315"><td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0201534118_p16974134022320"><a name="zh-cn_topic_0201534118_p16974134022320"></a><a name="zh-cn_topic_0201534118_p16974134022320"></a>tag</p>
     </td>
-    <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534118_p49755402238"><a name="zh-cn_topic_0201534118_p49755402238"></a><a name="zh-cn_topic_0201534118_p49755402238"></a>Object</p>
+    <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534118_p49755402238"><a name="zh-cn_topic_0201534118_p49755402238"></a><a name="zh-cn_topic_0201534118_p49755402238"></a><a href="#zh-cn_topic_0201534118_table13242848193719">tag</a> object</p>
     </td>
     <td class="cellrowborder" valign="top" width="13.62%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534118_p497516406238"><a name="zh-cn_topic_0201534118_p497516406238"></a><a name="zh-cn_topic_0201534118_p497516406238"></a>是</p>
     </td>

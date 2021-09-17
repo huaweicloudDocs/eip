@@ -4,6 +4,10 @@
 
 共享带宽插入弹性公网IP。
 
+## 调试<a name="zh-cn_topic_0201534131_section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=EIP&version=v2&api=AddPublicipsIntoSharedBandwidth)中直接运行调试该接口。
+
 ## URI<a name="zh-cn_topic_0201534131_section15012662"></a>
 
 POST /v2.0/\{project\_id\}/bandwidths/\{bandwidth\_id\}/insert
@@ -59,7 +63,7 @@ POST /v2.0/\{project\_id\}/bandwidths/\{bandwidth\_id\}/insert
     </td>
     <td class="cellrowborder" valign="top" width="15.98%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0201534131_p2376550915556"><a name="zh-cn_topic_0201534131_p2376550915556"></a><a name="zh-cn_topic_0201534131_p2376550915556"></a>是</p>
     </td>
-    <td class="cellrowborder" valign="top" width="21.43%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534131_p4595806815556"><a name="zh-cn_topic_0201534131_p4595806815556"></a><a name="zh-cn_topic_0201534131_p4595806815556"></a>Object</p>
+    <td class="cellrowborder" valign="top" width="21.43%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534131_p4595806815556"><a name="zh-cn_topic_0201534131_p4595806815556"></a><a name="zh-cn_topic_0201534131_p4595806815556"></a><a href="#zh-cn_topic_0201534131_table31854691">bandwidth</a> object</p>
     </td>
     <td class="cellrowborder" valign="top" width="47.18%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0201534131_p1610901815556"><a name="zh-cn_topic_0201534131_p1610901815556"></a><a name="zh-cn_topic_0201534131_p1610901815556"></a>带宽对象，请参见<a href="#zh-cn_topic_0201534131_table31854691">表3</a>。</p>
     </td>
@@ -120,8 +124,8 @@ POST /v2.0/\{project\_id\}/bandwidths/\{bandwidth\_id\}/insert
     </td>
     <td class="cellrowborder" valign="top" width="18.96%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0201534131_p9902149171411"><a name="zh-cn_topic_0201534131_p9902149171411"></a><a name="zh-cn_topic_0201534131_p9902149171411"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="49.72%" headers="mcps1.2.5.1.4 "><a name="zh-cn_topic_0201534131_ul14903154919144"></a><a name="zh-cn_topic_0201534131_ul14903154919144"></a><ul id="zh-cn_topic_0201534131_ul14903154919144"><li>功能说明：<span id="zh-cn_topic_0201534131_text137487231492"><a name="zh-cn_topic_0201534131_text137487231492"></a><a name="zh-cn_topic_0201534131_text137487231492"></a></span><span id="zh-cn_topic_0201534131_text7748162318915"><a name="zh-cn_topic_0201534131_text7748162318915"></a><a name="zh-cn_topic_0201534131_text7748162318915"></a>弹性公网IP</span>的类型</li><li>取值范围：<em id="zh-cn_topic_0201534131_i16850184017499"><a name="zh-cn_topic_0201534131_i16850184017499"></a><a name="zh-cn_topic_0201534131_i16850184017499"></a>5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP）</em><a name="zh-cn_topic_0201534131_ul585004064911"></a><a name="zh-cn_topic_0201534131_ul585004064911"></a><ul id="zh-cn_topic_0201534131_ul585004064911"><li>东北-大连：5_telcom、5_union</li><li>华南-广州：5_bgp、5_sbgp</li><li>华东-上海一：5_bgp、5_sbgp</li><li>华东-上海二：5_bgp、5_sbgp</li><li>华北-北京一：5_bgp、5_sbgp</li><li>亚太-香港：5_bgp</li><li>亚太-曼谷：5_bgp</li><li>亚太-新加坡：5_bgp</li><li>非洲-约翰内斯堡：5_bgp</li><li>西南-贵阳一：5_sbgp</li><li>华北-北京四：5_bgp、5_sbgp、5_dualStack</li><li>拉美-圣地亚哥：5_bgp</li><li>拉美-圣保罗一：5_bgp</li><li>拉美-墨西哥城一：5_bgp</li><li>拉美-布宜诺斯艾利一：5_bgp</li><li>拉美-利马一：5_bgp</li><li>拉美-圣地亚哥二：5_bgp</li></ul>
-    </li><li>约束：<a name="zh-cn_topic_0201534131_ul9738153015499"></a><a name="zh-cn_topic_0201534131_ul9738153015499"></a><ul id="zh-cn_topic_0201534131_ul9738153015499"><li>必须是系统具体支持的类型</li><li>publicip_id为IPv4端口，所以"publicip_type"字段未给定时，默认为5_bgp。</li><li>若publicip_id为弹性公网IP的id，则该字段可自动忽略。若publicip_id为IPv6端口PORT的id，则该字段必填，为5_dualStack（本条约束适用于“华北-北京四”）</li></ul>
+    <td class="cellrowborder" valign="top" width="49.72%" headers="mcps1.2.5.1.4 "><a name="zh-cn_topic_0201534131_ul14903154919144"></a><a name="zh-cn_topic_0201534131_ul14903154919144"></a><ul id="zh-cn_topic_0201534131_ul14903154919144"><li>功能说明：<span id="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text941224173012"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text941224173012"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text941224173012"></a></span><span id="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text4412641113015"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text4412641113015"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text4412641113015"></a>弹性公网IP</span>的类型</li><li>取值范围：<em id="zh-cn_topic_0201534131_zh-cn_topic_0201534274_i16850184017499"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_i16850184017499"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_i16850184017499"></a>5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP）</em><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_ul585004064911"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_ul585004064911"></a><ul id="zh-cn_topic_0201534131_zh-cn_topic_0201534274_ul585004064911"><li>东北-大连：5_telcom、5_union</li><li>华南-广州：5_bgp、5_sbgp</li><li>华东-上海一：<em id="zh-cn_topic_0201534131_zh-cn_topic_0201534274_i541911467911"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_i541911467911"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_i541911467911"></a>5_bgp</em>、5_sbgp</li><li>华东-上海二：5_bgp、5_sbgp</li><li>华北-北京一：5_bgp、5_sbgp</li><li><span id="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text4018327273"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text4018327273"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text4018327273"></a>中国-香港</span>：5_bgp</li><li>亚太-曼谷：5_bgp</li><li>亚太-新加坡：5_bgp</li><li>非洲-约翰内斯堡：5_bgp</li><li>西南-贵阳一：5_sbgp</li><li>华北-北京四：5_bgp、5_sbgp</li><li>拉美-圣地亚哥：5_bgp</li><li>拉美-圣保罗一：5_bgp</li><li>拉美-墨西哥城一：5_bgp</li><li>拉美-布宜诺斯艾利一：5_bgp</li><li>拉美-利马一：5_bgp</li><li>拉美-圣地亚哥二：5_bgp</li></ul>
+    </li><li>约束：<a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_ul9738153015499"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_ul9738153015499"></a><ul id="zh-cn_topic_0201534131_zh-cn_topic_0201534274_ul9738153015499"><li>必须是系统具体支持的类型</li><li>publicip_id为IPv4端口，所以"type"字段未给定时，默认为5_bgp。</li></ul>
     </li></ul>
     </td>
     </tr>
@@ -139,7 +143,7 @@ POST /v2.0/\{project\_id\}/bandwidths/\{bandwidth\_id\}/insert
         "publicip_info": [
           {
             "publicip_id": "1d184b2c-4ec9-49b5-a3f9-27600a76ba3f",
-            "publicip_type": "5_bgp"
+            "publicip_type": "5_bgp",
           }
         ]
       }
@@ -164,7 +168,7 @@ POST /v2.0/\{project\_id\}/bandwidths/\{bandwidth\_id\}/insert
     </thead>
     <tbody><tr id="zh-cn_topic_0201534131_row716877155516"><td class="cellrowborder" valign="top" width="18.34%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534131_p58067061155516"><a name="zh-cn_topic_0201534131_p58067061155516"></a><a name="zh-cn_topic_0201534131_p58067061155516"></a>bandwidth</p>
     </td>
-    <td class="cellrowborder" valign="top" width="25.509999999999998%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534131_p967638155516"><a name="zh-cn_topic_0201534131_p967638155516"></a><a name="zh-cn_topic_0201534131_p967638155516"></a>Object</p>
+    <td class="cellrowborder" valign="top" width="25.509999999999998%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534131_p967638155516"><a name="zh-cn_topic_0201534131_p967638155516"></a><a name="zh-cn_topic_0201534131_p967638155516"></a><a href="#zh-cn_topic_0201534131_table138718569112">bandwidth</a> object</p>
     </td>
     <td class="cellrowborder" valign="top" width="56.15%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0201534131_p34319839155516"><a name="zh-cn_topic_0201534131_p34319839155516"></a><a name="zh-cn_topic_0201534131_p34319839155516"></a>带宽对象，请参见<a href="#zh-cn_topic_0201534131_table138718569112">表6</a>。</p>
     </td>
@@ -253,8 +257,8 @@ POST /v2.0/\{project\_id\}/bandwidths/\{bandwidth\_id\}/insert
     </td>
     <td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534131_p561632984912"><a name="zh-cn_topic_0201534131_p561632984912"></a><a name="zh-cn_topic_0201534131_p561632984912"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="51%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534131_ul137091434125111"></a><a name="zh-cn_topic_0201534131_ul137091434125111"></a><ul id="zh-cn_topic_0201534131_ul137091434125111"><li>企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。创建共享带宽时，给共享带宽绑定企业项目ID。</li></ul>
-    <div class="note" id="zh-cn_topic_0201534131_note13203107131712"><a name="zh-cn_topic_0201534131_note13203107131712"></a><a name="zh-cn_topic_0201534131_note13203107131712"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="zh-cn_topic_0201534131_p1915862704914"><a name="zh-cn_topic_0201534131_p1915862704914"></a><a name="zh-cn_topic_0201534131_p1915862704914"></a>关于企业项目ID的获取及企业项目特性的详细信息，请参见<a href="https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html" target="_blank" rel="noopener noreferrer">《企业管理用户指南》</a>。</p>
+    <td class="cellrowborder" valign="top" width="51%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534131_ul137091434125111"></a><a name="zh-cn_topic_0201534131_ul137091434125111"></a><ul id="zh-cn_topic_0201534131_ul137091434125111"><li>企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。</li><li>创建共享带宽时，给共享带宽绑定企业项目ID。</li></ul>
+    <div class="note" id="zh-cn_topic_0201534131_note19041412125118"><a name="zh-cn_topic_0201534131_note19041412125118"></a><a name="zh-cn_topic_0201534131_note19041412125118"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="zh-cn_topic_0201534131_zh-cn_topic_0201534275_p1915862704914"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534275_p1915862704914"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534275_p1915862704914"></a>关于企业项目ID的获取及企业项目特性的详细信息，请参见<a href="https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html" target="_blank" rel="noopener noreferrer">《企业管理用户指南》</a>。</p>
     </div></div>
     </td>
     </tr>
@@ -313,8 +317,9 @@ POST /v2.0/\{project\_id\}/bandwidths/\{bandwidth\_id\}/insert
     </td>
     <td class="cellrowborder" valign="top" width="15.6%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534131_p42115453172552"><a name="zh-cn_topic_0201534131_p42115453172552"></a><a name="zh-cn_topic_0201534131_p42115453172552"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="57.69%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534131_ul13831731151713"></a><a name="zh-cn_topic_0201534131_ul13831731151713"></a><ul id="zh-cn_topic_0201534131_ul13831731151713"><li>功能说明：<span id="zh-cn_topic_0201534131_text1658195610102"><a name="zh-cn_topic_0201534131_text1658195610102"></a><a name="zh-cn_topic_0201534131_text1658195610102"></a></span><span id="zh-cn_topic_0201534131_text1358135661016"><a name="zh-cn_topic_0201534131_text1358135661016"></a><a name="zh-cn_topic_0201534131_text1358135661016"></a>弹性公网IP</span>的类型</li><li>取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP）<a name="zh-cn_topic_0201534131_ul161028178419"></a><a name="zh-cn_topic_0201534131_ul161028178419"></a><ul id="zh-cn_topic_0201534131_ul161028178419"><li>东北-大连：5_telcom、5_union</li><li>华南-广州：5_bgp、5_sbgp</li><li>华东-上海一：5_bgp、5_sbgp</li><li>华东-上海二：5_bgp、5_sbgp</li><li>华北-北京一：5_bgp、5_sbgp</li><li>亚太-香港：5_bgp</li><li>亚太-曼谷：5_bgp</li><li>亚太-新加坡：5_bgp</li><li>非洲-约翰内斯堡：5_bgp</li><li>西南-贵阳一：5_sbgp</li><li>华北-北京四：5_bgp、5_sbgp</li><li>拉美-圣地亚哥：5_bgp</li><li>拉美-圣保罗一：5_bgp</li><li>拉美-墨西哥城一：5_bgp</li><li>拉美-布宜诺斯艾利一：5_bgp</li><li>拉美-利马一：5_bgp</li><li>拉美-圣地亚哥二：5_bgp</li></ul>
-    </li><li>约束：必须是系统具体支持的类型</li></ul>
+    <td class="cellrowborder" valign="top" width="57.69%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534131_ul13831731151713"></a><a name="zh-cn_topic_0201534131_ul13831731151713"></a><ul id="zh-cn_topic_0201534131_ul13831731151713"><li>功能说明：<span id="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text941224173012_1"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text941224173012_1"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text941224173012_1"></a></span><span id="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text4412641113015_1"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text4412641113015_1"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text4412641113015_1"></a>弹性公网IP</span>的类型</li><li>取值范围：<em id="zh-cn_topic_0201534131_zh-cn_topic_0201534274_i16850184017499_1"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_i16850184017499_1"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_i16850184017499_1"></a>5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP）</em><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_ul585004064911_1"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_ul585004064911_1"></a><ul id="zh-cn_topic_0201534131_zh-cn_topic_0201534274_ul585004064911_1"><li>东北-大连：5_telcom、5_union</li><li>华南-广州：5_bgp、5_sbgp</li><li>华东-上海一：<em id="zh-cn_topic_0201534131_zh-cn_topic_0201534274_i541911467911_1"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_i541911467911_1"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_i541911467911_1"></a>5_bgp</em>、5_sbgp</li><li>华东-上海二：5_bgp、5_sbgp</li><li>华北-北京一：5_bgp、5_sbgp</li><li><span id="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text4018327273_1"><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text4018327273_1"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_text4018327273_1"></a>中国-香港</span>：5_bgp</li><li>亚太-曼谷：5_bgp</li><li>亚太-新加坡：5_bgp</li><li>非洲-约翰内斯堡：5_bgp</li><li>西南-贵阳一：5_sbgp</li><li>华北-北京四：5_bgp、5_sbgp</li><li>拉美-圣地亚哥：5_bgp</li><li>拉美-圣保罗一：5_bgp</li><li>拉美-墨西哥城一：5_bgp</li><li>拉美-布宜诺斯艾利一：5_bgp</li><li>拉美-利马一：5_bgp</li><li>拉美-圣地亚哥二：5_bgp</li></ul>
+    </li><li>约束：<a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_ul9738153015499_1"></a><a name="zh-cn_topic_0201534131_zh-cn_topic_0201534274_ul9738153015499_1"></a><ul id="zh-cn_topic_0201534131_zh-cn_topic_0201534274_ul9738153015499_1"><li>必须是系统具体支持的类型</li><li>publicip_id为IPv4端口，所以"type"字段未给定时，默认为5_bgp。</li></ul>
+    </li></ul>
     </td>
     </tr>
     </tbody>
@@ -346,8 +351,9 @@ POST /v2.0/\{project\_id\}/bandwidths/\{bandwidth\_id\}/insert
             ],
             "tenant_id": "8b7e35ad379141fc9df3e178bd64f55c",
             "charge_mode": "traffic",
+            "billing_info": "CS1712121146TSQOJ:0616e2a5dc9f4985ba52ea8c0c7e273c:southchina:35f2b308f5d64441a6fa7999fbcd4321",
             "bandwidth_type": "share",
-            "billing_info": "CS1712121146TSQOJ:0616e2a5dc9f4985ba52ea8c0c7e273c:southchina:35f2b308f5d64441a6fa7999fbcd4321"
+            "status": "NORMAL"
         }
     }
     ```

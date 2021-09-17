@@ -4,6 +4,10 @@
 
 删除浮动IP。
 
+## 调试<a name="zh-cn_topic_0201534157_section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=EIP&version=v2&api=NeutronDeleteFloatingIp)中直接运行调试该接口。
+
 ## URI<a name="zh-cn_topic_0201534157_section4025916121658"></a>
 
 DELETE /v2.0/floatingips/\{floatingip\_id\}

@@ -4,6 +4,10 @@
 
 删除弹性公网IP。
 
+## 调试<a name="zh-cn_topic_0201534180_section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=EIP&version=v2&api=DeletePublicip)中直接运行调试该接口。
+
 ## URI<a name="zh-cn_topic_0201534180_section61695723"></a>
 
 DELETE /v1/\{project\_id\}/publicips/\{publicip\_id\}
