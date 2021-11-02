@@ -223,6 +223,13 @@ GET /v1/\{project\_id\}/publicips/\{publicip\_id\}
     <a name="zh-cn_topic_0201534285_ul16116154317382"></a><a name="zh-cn_topic_0201534285_ul16116154317382"></a><ul id="zh-cn_topic_0201534285_ul16116154317382"><li>publicip只能绑定与该字段相同的资源</li><li>该参数当前仅在“华北-北京一”、“华北-北京四”、“华东-上海一”、“华东-上海二”、“华南-广州”、“西南-贵阳一”、“<span id="zh-cn_topic_0201534285_zh-cn_topic_0201534115_text268095293017"><a name="zh-cn_topic_0201534285_zh-cn_topic_0201534115_text268095293017"></a><a name="zh-cn_topic_0201534285_zh-cn_topic_0201534115_text268095293017"></a>中国-香港</span>”以及“亚太-曼谷”生效</li></ul>
     </td>
     </tr>
+    <tr id="zh-cn_topic_0201534285_row1623670161"><td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0201534285_p17216171341115"><a name="zh-cn_topic_0201534285_p17216171341115"></a><a name="zh-cn_topic_0201534285_p17216171341115"></a>allow_share_bandwidth_types</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="27.90720927907209%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0201534285_p13216141361114"><a name="zh-cn_topic_0201534285_p13216141361114"></a><a name="zh-cn_topic_0201534285_p13216141361114"></a>Array of strings</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="36.046395360463954%" headers="mcps1.2.4.1.3 "><a name="zh-cn_topic_0201534285_ul1756619360147"></a><a name="zh-cn_topic_0201534285_ul1756619360147"></a><ul id="zh-cn_topic_0201534285_ul1756619360147"><li>功能说明：表示此publicip可以加入的共享带宽类型列表。</li><li>如果列表为空，表示该publicip不能加入任何共享带宽。</li><li>约束：publicip只能加入到有该带宽类型的共享带宽中。</li></ul>
+    </td>
+    </tr>
     </tbody>
     </table>
 

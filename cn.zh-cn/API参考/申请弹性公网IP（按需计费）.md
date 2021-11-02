@@ -1,4 +1,4 @@
-# 申请弹性公网IP<a name="eip_api_0001"></a>
+# 申请弹性公网IP（按需计费）<a name="eip_api_0001"></a>
 
 ## 功能介绍<a name="zh-cn_topic_0201534274_section12153337"></a>
 

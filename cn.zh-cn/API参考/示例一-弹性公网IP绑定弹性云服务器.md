@@ -15,7 +15,7 @@
 
 ## 操作步骤<a name="section19170191052819"></a>
 
-1.  通过云服务器的ID查询网卡信息。
+1.  通过云服务器的ID查询网卡信息，API详情请参考[查询端口](https://support.huaweicloud.com/api-vpc/vpc_port01_0002.html)。
     1.  发送“GET  https://VPC的Endpoint/v1/\{project\_id\}/ports?device\_id=\{ecs\_id\}”，project\_id为项目ID。
     2.  在Request Header中增加“X-Auth-Token”。
     3.  查看请求响应结果。

@@ -1,4 +1,4 @@
-# 申请包周期弹性公网IP<a name="eip_api_0006"></a>
+# 申请弹性公网IP（包年/包月）<a name="eip_api_0006"></a>
 
 ## 功能介绍<a name="zh-cn_topic_0201534185_section95417125714"></a>
 
