@@ -1,0 +1,1017 @@
+# 查询EIP列表<a name="eip_api_0003"></a>
+
+## 功能介绍
+
+查询EIP列表
+
+## 调试
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=EIP&api=ListPublicips)中调试该接口。
+
+## URI
+
+GET /v1/\{project\_id\}/publicips
+
+**表 1**  路径参数
+
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.2"><p>是否必选</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.3"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="40%" id="mcps1.2.5.1.4"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>project_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>是</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>项目ID，获取项目ID请参见<a href="https://support.huaweicloud.com/api-vpc/vpc_api_0011.html" target="_blank" rel="noopener noreferrer">获取项目ID</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**表 2**  Query参数
+
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.2"><p>是否必选</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.3"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="40%" id="mcps1.2.5.1.4"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>marker</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>取值为上一页数据的最后一条记录的id，为空时为查询第一页</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>limit</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>Integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>功能说明：每页返回的个数 取值范围：0~intmax</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>ip_version</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>Integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>IP地址版本信息 4：IPv4 6：IPv6</p>
+<p>枚举值：</p>
+<ul><li><p><strong>4</strong></p>
+</li><li><p><strong>6</strong></p>
+</li></ul>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>enterprise_project_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><ul><li><p>功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的弹性IP弹性公网IP。</p>
+</li><li><p>取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的弹性公网IP，请传参all_granted_eps。</p>
+</li></ul>
+<div class="note"><span class="notetitle"> 说明： </span><div class="notebody"><p>关于企业项目ID的获取及企业项目特性的详细信息，请参见<a href="https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html" target="_blank" rel="noopener noreferrer">《企业管理用户指南》</a>。</p>
+</div></div>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>port_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>Array</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>绑定弹性公网IP的端口id</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>public_ip_address</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>Array</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>IPv4时是申请到的弹性公网IP地址，IPv6时是IPv6地址对应的IPv4地址</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>private_ip_address</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>Array</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>关联端口的私有IP地址</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>Array</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>弹性公网IP唯一标识</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>allow_share_bandwidth_type_any</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>Array</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>共享带宽类型，根据任一共享带宽类型过滤EIP列表。 可以指定多个带宽类型，不同的带宽类型间用逗号分隔。</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## 请求参数
+
+**表 3**  请求Header参数
+
+<a name="HeaderParameter"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.2"><p>是否必选</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.3"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="40%" id="mcps1.2.5.1.4"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>X-Auth-Token</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>是</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>用户Token。通过调用IAM服务获取用户Token接口获取（响应消息头中X-Subject-Token的值）</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## 响应参数
+
+**状态码： 200**
+
+**表 4**  响应Body参数
+
+<a name="response_ListPublicipResponseBody"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>publicips</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>Array of <a href="#response_PublicipShowResp">PublicipShowResp</a> objects</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>弹性公网IP对象</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**表 5**  PublicipShowResp
+
+<a name="response_PublicipShowResp"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>bandwidth_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>EIP对应带宽ID</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>bandwidth_name</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>带宽名称</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>bandwidth_share_type</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>表示共享带宽或者独享带宽 取值范围：PER，WHOLE。 WHOLE表示共享带宽 PER表示独享带宽 约束：其中IPv6暂不支持WHOLE类型带宽。</p>
+<p>枚举值：</p>
+<ul><li><p><strong>WHOLE</strong></p>
+</li><li><p><strong>PER</strong></p>
+</li></ul>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>bandwidth_size</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>Integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>带宽大小，单位为Mbit/s。</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>create_time</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>EIP申请时间（UTC）</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>enterprise_project_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><ul><li><p>企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。</p>
+</li><li><p>创建弹性公网IP时，给弹性公网IP绑定企业项目ID。</p>
+</li><li><p>不指定该参数时，默认值是 0</p>
+</li></ul>
+<p>关于企业项目ID的获取及企业项目特性的详细信息，请参见<a href="https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html" target="_blank" rel="noopener noreferrer">《企业管理用户指南》</a>。</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>EIP唯一标识</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>port_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><ul><li><p>功能说明：端口id。</p>
+</li><li><p>约束：只有绑定了的EIP查询才会返回该参数</p>
+</li></ul>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>private_ip_address</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><ul><li><p>功能说明：绑定弹性公网IP的私有IP地址</p>
+</li><li><p>约束：只有绑定了的弹性公网IP查询才会返回该参数</p>
+</li></ul>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>profile</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p><a href="#response_ProfileResp">ProfileResp</a> object</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><ul><li><p>功能说明：额外参数，包括订单id、产品id等信息</p>
+</li><li><p>约束：如果profile不为空，说明是包周期的EIP</p>
+</li></ul>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>public_ip_address</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>IPv4时是申请到的EIP地址，IPv6时是IPv6地址对应的IPv4地址</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>status</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><ul><li><p>功能说明：弹性公网IP的状态</p>
+</li><li><p>取值范围：冻结FREEZED，绑定失败BIND_ERROR，绑定中BINDING，释放中PENDING_DELETE， 创建中PENDING_CREATE，创建中NOTIFYING，释放中NOTIFY_DELETE，更新中PENDING_UPDATE， 未绑定DOWN ，绑定ACTIVE，绑定ELB，绑定VPN，失败ERROR。</p>
+</li></ul>
+<p>枚举值：</p>
+<ul><li><p><strong>FREEZED</strong></p>
+</li><li><p><strong>BIND_ERROR</strong></p>
+</li><li><p><strong>BINDING</strong></p>
+</li><li><p><strong>PENDING_DELETE</strong></p>
+</li><li><p><strong>PENDING_CREATE</strong></p>
+</li><li><p><strong>NOTIFYING</strong></p>
+</li><li><p><strong>NOTIFY_DELETE</strong></p>
+</li><li><p><strong>PENDING_UPDATE</strong></p>
+</li><li><p><strong>DOWN</strong></p>
+</li><li><p><strong>ACTIVE</strong></p>
+</li><li><p><strong>ELB</strong></p>
+</li><li><p><strong>ERROR</strong></p>
+</li><li><p><strong>VPN</strong></p>
+</li></ul>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>tenant_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>项目ID</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>type</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><ul><li><p>功能说明：EIP的类型</p>
+</li><li><p>取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP），5_ipv6</p>
+<ul><li><p>东北-大连：5_telcom、5_union</p>
+</li><li><p>华南-广州：5_bgp、5_sbgp</p>
+</li><li><p>华东-上海一：5_bgp、5_sbgp</p>
+</li><li><p>华东-上海二：5_bgp、5_sbgp</p>
+</li><li><p>华北-北京一：5_bgp、5_sbgp、5_ipv6</p>
+</li><li><p>中国-香港：5_bgp</p>
+</li><li><p>亚太-曼谷：5_bgp</p>
+</li><li><p>亚太-新加坡：5_bgp</p>
+</li><li><p>非洲-约翰内斯堡：5_bgp</p>
+</li><li><p>西南-贵阳一：5_bgp、5_sbgp</p>
+</li><li><p>华北-北京四：5_bgp、5_sbgp</p>
+</li><li><p>拉美-圣地亚哥：5_bgp</p>
+</li><li><p>拉美-圣保罗一：5_bgp</p>
+</li><li><p>拉美-墨西哥城一：5_bgp</p>
+</li><li><p>拉美-布宜诺斯艾利一：5_bgp</p>
+</li><li><p>拉美-利马一：5_bgp</p>
+</li><li><p>拉美-圣地亚哥二： 5_bgp</p>
+</li></ul>
+</li><li><p>约束：</p>
+<ul><li><p>必须是系统具体支持的类型。</p>
+</li><li><p>publicip_id为IPv4端口，所以"type"字段未给定时，默认为5_bgp。</p>
+</li></ul>
+</li></ul>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>public_ipv6_address</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>IPv4时无此字段，IPv6时为申请到的EIP地址</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>ip_version</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>Integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>IP版本信息，取值范围是4和6 4：表示IPv4 6：表示IPv6</p>
+<p>枚举值：</p>
+<ul><li><p><strong>4</strong></p>
+</li><li><p><strong>6</strong></p>
+</li></ul>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>public_border_group</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><ul><li><p>功能说明：表示中心站点资源或者边缘站点资源,对接了边缘站点的区域才会返回该字段</p>
+</li><li><p>取值范围： center、边缘站点名称 约束：publicip只能绑定该字段相同的资源</p>
+</li></ul>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>allow_share_bandwidth_types</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>Array of strings</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><ul><li><p>功能说明：表示此publicip可以加入的共享带宽类型列表，</p>
+</li><li><p>如果列表为空，则表示该publicip不能加入任何共享带宽</p>
+</li><li><p>约束：publicip只能加入到有该带宽类型的共享带宽中</p>
+</li></ul>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>alias</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><ul><li><p>功能说明：弹性公网IP名称</p>
+</li><li><p>取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）</p>
+</li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+**表 6**  ProfileResp
+
+<a name="response_ProfileResp"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>order_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>订单的id</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>product_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>产品的id</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>region_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>region的id</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>user_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>用户的id</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**状态码： 400**
+
+**表 7**  响应Body参数
+
+<a name="response_FailedRsp"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>message</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息描述</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>code</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息编码</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**状态码： 401**
+
+**表 8**  响应Body参数
+
+<a name="response_FailedRsp_1"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>message</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息描述</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>code</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息编码</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**状态码： 403**
+
+**表 9**  响应Body参数
+
+<a name="response_FailedRsp_2"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>message</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息描述</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>code</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息编码</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**状态码： 404**
+
+**表 10**  响应Body参数
+
+<a name="response_FailedRsp_3"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>message</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息描述</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>code</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息编码</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**状态码： 405**
+
+**表 11**  响应Body参数
+
+<a name="response_FailedRsp_4"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>message</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息描述</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>code</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息编码</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**状态码： 406**
+
+**表 12**  响应Body参数
+
+<a name="response_FailedRsp_5"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>message</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息描述</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>code</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息编码</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**状态码： 407**
+
+**表 13**  响应Body参数
+
+<a name="response_FailedRsp_6"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>message</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息描述</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>code</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息编码</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**状态码： 408**
+
+**表 14**  响应Body参数
+
+<a name="response_FailedRsp_7"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>message</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息描述</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>code</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息编码</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**状态码： 409**
+
+**表 15**  响应Body参数
+
+<a name="response_FailedRsp_8"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>message</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息描述</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>code</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息编码</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**状态码： 500**
+
+**表 16**  响应Body参数
+
+<a name="response_FailedRsp_9"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>message</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息描述</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>code</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息编码</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**状态码： 501**
+
+**表 17**  响应Body参数
+
+<a name="response_FailedRsp_10"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>message</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息描述</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>code</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息编码</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**状态码： 502**
+
+**表 18**  响应Body参数
+
+<a name="response_FailedRsp_11"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>message</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息描述</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>code</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息编码</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**状态码： 503**
+
+**表 19**  响应Body参数
+
+<a name="response_FailedRsp_12"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>message</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息描述</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>code</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息编码</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**状态码： 504**
+
+**表 20**  响应Body参数
+
+<a name="response_FailedRsp_13"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>message</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息描述</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>code</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>服务异常错误信息编码</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## 请求示例
+
+```
+GET https://{Endpoint}/v1/{project_id}/publicips?limit=2&marker=4779ab1c-7c1a-44b1-a02e-93dfc361b32d
+```
+
+## 响应示例
+
+**状态码： 200**
+
+GET操作正常返回
+
+```
+{
+  "publicips" : [ {
+    "tenant_id" : "8b7e35ad379141fc9df3e178bd64f55c",
+    "bandwidth_name" : "bandwidth-test",
+    "public_ip_address" : "161.xx.xx.9",
+    "create_time" : "2015-07-16 04:22:32",
+    "profile" : {
+      "user_id" : "35f2b308f5d64441a6fa7999fbcd4321",
+      "product_id" : "00301-48027-0--0",
+      "region_id" : "xxx",
+      "order_id" : "xxxxxxxxx"
+    },
+    "type" : "5_bgp",
+    "bandwidth_id" : "3fa5b383-5a73-4dcb-a314-c6128546d855",
+    "bandwidth_size" : 5,
+    "enterprise_project_id" : "b261ac1f-2489-4bc7-b31b-c33c3346a439",
+    "ip_version" : 4,
+    "private_ip_address" : "192.168.10.5",
+    "bandwidth_share_type" : "PER",
+    "id" : "6285e7be-fd9f-497c-bc2d-dd0bdea6efe0",
+    "status" : "ACTIVE",
+    "port_id" : "4977b983-cd4f-4ecc-93a1-cb52d848a9b3",
+    "public_border_group" : "center",
+    "allow_share_bandwidth_types" : [ "share" ]
+  }, {
+    "tenant_id" : "8b7e35ad379141fc9df3e178bd64f55c",
+    "bandwidth_name" : "bandwidth-test1",
+    "public_ip_address" : "161.xx.xx.10",
+    "create_time" : "2015-07-16 04:23:03",
+    "profile" : { },
+    "type" : "5_bgp",
+    "bandwidth_id" : "a79fd11a-047b-4f5b-8f12-99c178cc780a",
+    "bandwidth_size" : 5,
+    "enterprise_project_id" : "0",
+    "ip_version" : 4,
+    "bandwidth_share_type" : "PER",
+    "id" : "80d5b82e-43b9-4f82-809a-37bec5793bd4",
+    "status" : "DOWN",
+    "public_border_group" : "center",
+    "allow_share_bandwidth_types" : [ "share" ]
+  } ]
+}
+```
+
+## 状态码
+
+<a name="status_code"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="15%" id="mcps1.1.3.1.1"><p>状态码 </p>
+</th>
+<th class="cellrowborder" valign="top" width="85%" id="mcps1.1.3.1.2"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>200</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>GET操作正常返回</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>400</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>服务器未能处理请求</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>401</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>被请求的页面需要用户名和密码</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>403</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>对被请求页面的访问被禁止</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>404</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>服务器无法找到被请求的页面</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>405</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>请求中指定的方法不被允许</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>406</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>服务器生成的响应无法被客户端所接受</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>407</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>用户必须首先使用代理服务器进行验证，这样请求才会被处理</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>408</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>请求超出了服务器的等待时间</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>409</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>由于冲突，请求无法被完成</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>500</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>请求未完成。服务异常</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>501</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>请求未完成。服务器不支持所请求的功能</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>502</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>请求未完成。服务器从上游服务器收到一个无效的响应</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>503</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>请求未完成。系统暂时异常</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>504</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>网关超时</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## 错误码
+
+请参见[错误码](错误码.md)。
+
