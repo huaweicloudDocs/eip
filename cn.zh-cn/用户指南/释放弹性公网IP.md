@@ -11,8 +11,6 @@
 
     如果您要找回指定弹性公网IP，具体请参见[如何创建或找回指定的弹性公网IP？](https://support.huaweicloud.com/eip_faq/faq_eip_0012.html)。
 
-    如果您要找回指定弹性公网IP，具体请参见[如何创建或找回指定的弹性公网IP？](https://support.huaweicloud.com/intl/zh-cn/eip_faq/faq_eip_0012.html)。
-
 -   对于按需计费的弹性公网IP， 释放该弹性公网IP，华为云会停止收取IP保有费、带宽费和流量费。
 
     >![](public_sys-resources/icon-note.gif) **说明：** 
